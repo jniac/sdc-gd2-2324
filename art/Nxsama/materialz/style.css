@@ -1,0 +1,9 @@
+body {
+    background-color: aquamarine;
+}
+
+main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
