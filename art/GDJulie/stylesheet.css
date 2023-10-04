@@ -9,6 +9,8 @@ body {
 
     margin: 0;
     padding: 0;
+    width: fit-content;
+    height: fit-content;
 }
 
 header {
@@ -16,24 +18,57 @@ header {
     color: gray;
 }
     header > nav {
+        font-family: "Outfit";
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    body > div {
-        margin: 0;
-        padding: 5px;
+    header > nav > ul {
+        list-style: none;
     }
 
-    body > div > p {
-        font-family: "Handlee";
-        font-size: medium;
+    main {
+        margin: 0;
+        padding: 1%;
     }
+    
+        main > h1 {
+            font-family: "Rubik";
+
+            margin: 0;
+            padding: 0;
+        }
+
+        main > p {
+            font-family: "Outfit";
+            font-size: medium;
+        }
+
+    .gallery {
+        background-color: white;
+        border-radius: 5px;
+
+        display: flex;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 1%;
+    }
+        .gallery > img {
+            width: 50%;
+            height: 50%;
+        }
+            .gallery > image :hover {
+                border-color: aqua;
+                border-width: 3px;
+            }
 
 footer {
     background-color: gainsboro;
     color: gray;
+    font-family: "Rubik";
 
     display: flex;
     justify-content: center;
