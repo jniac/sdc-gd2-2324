@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gainsboro;
+    color: gray;
+}
+    header > nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    body > div {
+        margin: 0;
+        padding: 5px;
+    }
+
+    body > div > p {
+        font-family: "Handlee";
+        font-size: medium;
+    }
+
+footer {
+    background-color: gainsboro;
+    color: gray;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 2px;
+}
