@@ -1,0 +1,13 @@
+body,
+body * {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  appearance: none;
+  font-family: inherit;
+}
