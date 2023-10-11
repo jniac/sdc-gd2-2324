@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sdc-gd2-2324</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=block);
+      :root {
+        font-family: 'Fira Mono', monospace;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table th, table td {
+        --border-vertical: solid 1px #369;
+        --border-horizontal: solid 1px #3693;
+        border-left: var(--border-vertical);
+        border-right: var(--border-vertical);
+        border-top: var(--border-horizontal);
+        border-bottom: var(--border-horizontal);
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>github</th>
+            <th>prefix</th>
+            <th>combo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <script type="module">
+      import yaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
+      
+      const data = await window
+        .fetch('info/promotion.yaml')
+        .then(response => response.text())
+        .then(text => yaml.load(text))
+
+      const tbody = document.querySelector('table tbody')
+      tbody.innerHTML = data.promotion
+        .map(student => {
+          const { names, github, prefix } = student
+          return /* html */`
+            <tr>
+              <td>${names.join(' ')}</td>
+              <td>${github}</td>
+              <td>${prefix}</td>
+              <td>${prefix}_${github}</td>
+            </tr>
+          `
+        })
+        .join('\n')
+    </script>
+  </body>
+</html>
