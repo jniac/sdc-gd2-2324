@@ -1,0 +1,11 @@
+body {
+
+    color: tomato;
+}
+
+main {
+
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}

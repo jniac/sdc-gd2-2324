@@ -1,9 +1,8 @@
 @import url(../../../common-resources/reset.css);
 
 body {
-  background-color: rgb(82, 200, 226);
+  background-color: rgb(170, 128, 248);
 }
-
 main {
   width: 600px;
   display: flex;
