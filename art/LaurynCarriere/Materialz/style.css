@@ -1,7 +1,8 @@
 @import url(../../../common-resources/reset.css);
 
+
 body {
-    background-color: aquamarine;
+  background-color: rgb(253, 74, 200);
 }
 
 main {

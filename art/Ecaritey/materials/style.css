@@ -1,7 +1,7 @@
-@import url(../../../common-resources/reset.css);
+@import url(../../);
 
 body {
-    background-color: aquamarine;
+    background-color: lavenderblush;
 }
 
 main {

@@ -1,9 +1,7 @@
 @import url(../../../common-resources/reset.css);
-
 body {
-    background-color: aquamarine;
+    background-color: blanchedalmond;
 }
-
 main {
     width: 600px;
     display: flex;

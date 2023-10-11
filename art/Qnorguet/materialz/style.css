@@ -1,0 +1,11 @@
+@import url(../../../common-ressources/reset.css);
+
+body {
+    background-color: rgb(0, 251, 255);
+}
+
+main{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
