@@ -1,0 +1,9 @@
+@import url(../../../common-resources/reset.css);
+body {
+    background-color: blanchedalmond;
+}
+main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
