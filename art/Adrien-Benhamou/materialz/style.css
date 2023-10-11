@@ -1,0 +1,11 @@
+
+
+body {
+    background-color: rgb(93, 120, 200);
+}
+
+main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
