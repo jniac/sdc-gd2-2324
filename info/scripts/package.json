@@ -9,6 +9,7 @@
   "author": "jniac",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "js-yaml": "^4.1.0"
   }
 }
