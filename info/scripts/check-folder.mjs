@@ -40,5 +40,5 @@ async function filesExists(folder, fileNamePredicate = student => student.github
 const webArtFolder = '../../art'
 console.log(`web folders: ${await filesExists(webArtFolder)}`)
 
-const unrealArtFolder = '/Users/joseph/Documents/Unreal Projects/SDC_GD2_2324_UE5/Content/Art'
+const unrealArtFolder = '/Users/joseph/Documents/Unreal Projects/SDC_GD2_2324_UE5_V2/Content/Art'
 console.log(`unreal folders: ${await filesExists(unrealArtFolder, ({ prefix, github }) => `${prefix}_${github}`)}`)
