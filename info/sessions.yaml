@@ -1,0 +1,149 @@
+
+description: >-
+  La réalisation de mondes virtuels nécessite la prise en main d'un nombre 
+  considérable d'outils de création et d'édition. Parmi les plus populaires se
+  distingue aujourd'hui Unreal Engine, la célèbre solution proposée par Epic
+  Games et qui supporte le jeu non moins célèbre FortNite.
+
+  Unreal Engine 5.0 se distingue par le réalisme de son moteur. Tout particulièrement
+  par la qualité de l'éclairage, qu'il s'agisse des ombres, de l'illumination 
+  globale ou des shaders atmosphériques (ciel, brouillard). 
+
+  Mais il est une autre fameuse caractéristique du moteur : son support de la 
+  programmation nodale. Deux types de programmation nodales se distinguent, 
+  il y a celle qui permet de définir le rendu des matériaux (shader), et celle
+  qui permet la programmation générale (blueprint), que ce soit au niveau d'un 
+  composant ou plus généralement d'une scène de jeu.
+
+  Unreal Engine intègre aussi des solutions pour l'édition de contenus. Un outil
+  basique (mais complet) permet la création de primitives (mesh). Deux autres 
+  outils permettent la création de paysage en dessinant des élévations (landscape)
+  et la répartition d'objets à sa surface (foliage).
+
+  Le support de la collaboration, c'est à dire la possibilité pour 
+  différents designers de travailler sur un même projet, est un point crucial du
+  développement de projets digitaux. Il sera intéressant ici de se pencher sur le
+  fonctionnement de Git et son support (complexe, voire chaotique) par Unreal.
+
+  Enfin, la présentation du travail accompli est un point qui mérite notre 
+  attention. La réalisation de captures d'écran fixes (images) puis animées 
+  (vidéos), leur mise en page à travers des pages web rudimentaires (HTML / CSS)
+  où sera pris en compte le choix de la typographie et des couleurs est une étape
+  finale indispensable. Github permettra l'hébergement des pages ainsi créées.
+
+  Après un rapide tour d'horizon du fonctionnement général d'Unreal Engine, de 
+  Git et de Github, il sera intéressant de se familiariser avec les blueprints 
+  autour de la création d'un premier "artefact" : Un objet interactif qui sera
+  l'occasion de créer des matériaux dynamiques (couleur, masque), d'animer des
+  "static mesh" (rotation, translation), le tout en fonction de la position de
+  l'avatar du joueur. 
+  Dans un second temps nous créerons un paysage plus vaste susceptible 
+  d'acceuillir l'artefact, invisible de prime abord et qui sera alors révélé au 
+  terme d'une progression.
+  Enfin, dans un troisième temps, reprenant les concepts abordés lors de la 
+  création de l'artefact, nous verrons comment créer des éléments de gameplay
+  inspirés des "platformers" 3D pour proposer un second parcours plus compliqué
+  cette fois.
+
+objectives:
+- main: Collaborer avec git & github (l'outil & la plateforme).
+  details:
+  - Comprendre la notion de "commit", valider ses propres modifications, annuler les autres. 
+  - Comprendre le cycle pull / push
+- main: Se réperer dans l'interface, savoir se déplacer dans la scène, modifier les objets.
+  details:
+  - Savoir ce qu'est une scène. Savoir de quoi est-elle généralement constituée.
+  - Se déplacer dans l'espace, revenir sur un objet
+  - Comprendre le panneau "Outliner"
+  - Comprendre le panneau "Details"
+  - Modifier la scène principale.
+- main: Savoir créer et modifier un matériau "PBR".
+  details:
+  - "Matériau : Comprendre les principaux canaux (base color, metallic, roughness, normal) d'un matériau classique (opaque)."
+  - "Matériau : Connaître et savoir utiliser les différents type de matériaux (opaque, masked, transluscent, additive)."
+  - "Matériau : Savoir créer des paramètres."
+- main: "Savoir créer et modifier des composants interactifs: Blueprint"
+  details:
+  - "Blueprint : Composer un blueprint (static mesh, scene, collision)"
+  - "Blueprint : Programmer un blueprint (réagir à des évènements Begin / End Overlap, créer des variables)."
+  - "Blueprint : Organiser le code (créer des commentaires, créer des fonctions)."
+  - "Blueprint : Combiner / assembler des blueprints."
+- main: Être capable de composer un paysage
+  details:
+  - Créer des élévations, dessiner un parcours.
+  - Savoir créer un matériau compatible avec "landscape" (nœud landscape layer blend).
+  - Savoir utiliser le pinceau pour créer des transitions entre couches de matériau.
+  - Savoir se servir de l'outil Foliage (herbe, buisson, arbres).
+- main: Présenter son travail
+  details: 
+  - Savoir faire une bonne capture d'écran (angle de vue, cadre, compositon).
+  - Savoir résumer son travail par une série d'images (ni trop peu, ni trop beaucoup).
+  - Savoir faire une capture vidéo (éviter les temps mort, rogner)
+  - Savoir compresser ses images (500Ko pour une image statiques, 10Mo pour une vidéo).
+  - Savoir mettre en page ses images (HTML / CSS rudimentaires, typographie, couleur)
+
+syllabus:
+- title: Objectif
+  content: >-
+    Se répérer dans le logiciel, être capable de modifier une scène, savoir utiliser les assets présents.
+    Créer des matériaux riches (PBR), connaîtres leurs principales caractéristiques, être capable de créer des textures (effets de masque etc.).
+    Créer des blueprints et programmer des comportements simples. Modifier la position d'un objet, sa rotation. Modifier un matériau (paramètre).
+    Savoir composer un paysage, créer des élévations et habiller les surfaces (matériau + "foliage").
+    Mettre en scène une exploration, créer un parcours et le communiquer.
+
+- title: Prérequis
+  content: >-
+    Avoir un compte github (collaboration). Une machine avec Unreal Engine, Git et VSCode installé.
+    Savoir créer des images.
+    
+- title: Métiers
+  content: >-
+    Game Designer
+    Level Designer
+    Environment Artist
+
+- title: Compétences Métiers
+
+- title: Méthode Pédagogique
+  content: >-
+    Explication et démonstration projetées à l'écran. Reproduction individuelle. 
+    Suivi individuel en cas de difficultés.
+    Rendus partagés.
+
+- title: Évaluation
+  content: >-
+    Respect des contraintes techniques (taille des images).
+    Qualité de la présentation (qualité photographique des images, choix de la typographie, couleur).
+    Innovation technique.
+    Impression artistique générale (qualité plastique de la proposition, level design, ajustement de la difficulté).
+
+sessions:
+# Octobre
+- date: 04/10/2023 - 3h
+  work: Présentation générale
+- date: 11/10/2023 - 3h
+  work: Artefact - présentation, mise en place de la collaboration
+- date: 18/10/2023 - 3h
+  work: Artefact - réalisation, démonstration
+# Novembre
+- date: 15/11/2023 - 3h
+  work: Artefact - réalisation, démonstration
+- date: 22/11/2023 - 3h
+  work: Artefact - réalisation, démonstration
+- date: 29/11/2023 - 3h
+  work: Artefact - réalisation, démonstration
+# Décembre
+- date: 13/12/2023 - 3h
+  work: Landscape - présentation du pack d'assets, un premier matériau simple, des élévations.
+- date: 20/12/2023 - 3h
+  work: Landscape - Utilisation des couches (layer blend), utilisation de l'outil Foliage.
+# Janvier
+- date: 10/01/2024 - 3h
+- date: 24/01/2024 - 3h
+- date: 31/01/2024 - 3h
+# Février
+- date: 07/02/2024 - 3h
+- date: 28/02/2024 - 3h
+# Mars
+- date: 13/03/2024 - 3h
+- date: 20/03/2024 - 3h
