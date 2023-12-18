@@ -84,7 +84,7 @@ objectives:
 
 syllabus:
 - title: Objectif
-  content: >-
+  content: |-
     Se répérer dans le logiciel, être capable de modifier une scène, savoir utiliser les assets présents.
     Créer des matériaux riches (PBR), connaîtres leurs principales caractéristiques, être capable de créer des textures (effets de masque etc.).
     Créer des blueprints et programmer des comportements simples. Modifier la position d'un objet, sa rotation. Modifier un matériau (paramètre).
@@ -92,29 +92,36 @@ syllabus:
     Mettre en scène une exploration, créer un parcours et le communiquer.
 
 - title: Prérequis
-  content: >-
+  content: |-
     Avoir un compte github (collaboration). Une machine avec Unreal Engine, Git et VSCode installé.
-    Savoir créer des images.
+    Savoir créer des images (avec Photoshop par exemple, une solution utilisant Figma (gratuit) sera proposée en classe).
     
 - title: Métiers
-  content: >-
+  content: |-
     Game Designer
     Level Designer
     Environment Artist
 
 - title: Compétences Métiers
+  content: |-
+    Maîtrise d'Unreal Engine
+    Création d'Environnements 3D
+    Programmation avec Blueprints
+    Collaboration (Git / Github)
+    Présentation (HTML / CSS)
+    Résolution de Problèmes
 
 - title: Méthode Pédagogique
-  content: >-
+  content: |-
     Explication et démonstration projetées à l'écran. Reproduction individuelle. 
     Suivi individuel en cas de difficultés.
     Rendus partagés.
 
 - title: Évaluation
-  content: >-
-    Respect des contraintes techniques (taille des images).
+  content: |-
+    Respect des contraintes techniques (dimensions, taille des images).
     Qualité de la présentation (qualité photographique des images, choix de la typographie, couleur).
-    Innovation technique.
+    Implication, innovation technique.
     Impression artistique générale (qualité plastique de la proposition, level design, ajustement de la difficulté).
 
 sessions:
@@ -124,26 +131,56 @@ sessions:
 - date: 11/10/2023 - 3h
   work: Artefact - présentation, mise en place de la collaboration
 - date: 18/10/2023 - 3h
-  work: Artefact - réalisation, démonstration
+  work: Artefact - réalisation, démonstration, suivi individuel
 # Novembre
 - date: 15/11/2023 - 3h
-  work: Artefact - réalisation, démonstration
+  work: |-
+    Artefact - réalisation, démonstration, suivi individuel
+    Qu'est-ce qu'un matériau ? Les différents types. Comment modifier l'apparence ? (couleur / texture).
 - date: 22/11/2023 - 3h
-  work: Artefact - réalisation, démonstration
+  work: |- 
+    Artefact - réalisation, démonstration, suivi individuel
+    Créer un matériau dymanique. Le modifier via Blueprint.
 - date: 29/11/2023 - 3h
-  work: Artefact - réalisation, démonstration
+  work: |- 
+    Artefact - réalisation, démonstration, suivi individuel
+    Event graph vs Construction script. Créer des instances uniques.
 # Décembre
 - date: 13/12/2023 - 3h
-  work: Landscape - présentation du pack d'assets, un premier matériau simple, des élévations.
+  work: |-
+    Artefact - réalisation, démonstration, suivi individuel
+    Utiliser une boucle for pour animer plusieurs objets à la fois.
 - date: 20/12/2023 - 3h
-  work: Landscape - Utilisation des couches (layer blend), utilisation de l'outil Foliage.
+  work: |- 
+    Rendu artefact. Présentation web.
+    Capture images statiques + vidéos. Intégration web (rudimentaire) + présentation (typo / couleurs).
 # Janvier
 - date: 10/01/2024 - 3h
+  work: |-
+    Landscape - modeling / layer blend
+    Présentation du pack d'assets, un premier matériau simple avec 2 couches (dirt / rock), des élévations.
 - date: 24/01/2024 - 3h
+  work: |- 
+    Landscape - modeling / layer blend / foliage
+    Ajout de 2 nouvelles couches (grass, footpath). Utilisation de l'outil Foliage.
 - date: 31/01/2024 - 3h
+  work: |-
+    Landscape - Création avec brief
+    Création d'un parcours en respectant des volumes simples demandés. Intégration de l'artefact.
 # Février
 - date: 07/02/2024 - 3h
+  work: |-
+    Interaction avec l'environnement. 
+    Widget simple pour permettre l'interaction avec l'environnement. 
 - date: 28/02/2024 - 3h
+  work: |-
+    Dialogue avec PNJ
+    Approche d'une solution basique 
 # Mars
 - date: 13/03/2024 - 3h
+  work: |-
+    Mini inventaire.
+    Quête élémentaire (trouver une clé, ouvrir une porte).
 - date: 20/03/2024 - 3h
+  work: |-
+    Conclusion

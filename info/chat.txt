@@ -1,0 +1,91 @@
+Un syllabus est une structure de cours détaillée qui énumère les sujets qui seront abordés, les objectifs d'apprentissage, les activités, les évaluations, etc. Voici un exemple de syllabus pour un ensemble de cours de 45 heures sur Unreal Engine. Notez que cela doit être adapté en fonction des besoins spécifiques de votre public cible et des ressources disponibles.
+
+Titre du Cours: Introduction au Développement de Jeux avec Unreal Engine
+
+Objectif Général:
+Le cours vise à familiariser les étudiants avec le moteur de jeu Unreal Engine et à développer les compétences nécessaires pour créer des jeux interactifs.
+
+Semaine 1-2: Introduction à Unreal Engine
+
+Présentation d'Unreal Engine: historique, caractéristiques principales.
+Installation et configuration d'Unreal Engine.
+Interface utilisateur et navigation de base.
+Semaine 3-4: Concepts Fondamentaux de la Création de Jeux
+
+Compréhension des actifs: modèles 3D, textures, animations.
+Création de niveaux et d'environnements.
+Introduction à la programmation avec Blueprints.
+Semaine 5-6: Développement de Jeux 2D
+
+Création d'un jeu simple en 2D.
+Utilisation des Blueprints pour la logique de jeu.
+Gestion des événements et des entrées utilisateur.
+Semaine 7-8: Développement de Jeux 3D
+
+Introduction aux jeux 3D avec Unreal Engine.
+Création d'un niveau 3D interactif.
+Utilisation de caméras et de l'éclairage.
+Semaine 9-10: Animation et Cinématiques
+
+Animation de personnages et d'objets.
+Création de cinématiques avec le système Sequencer.
+Utilisation de l'animation de caméra pour créer des cutscenes.
+Semaine 11-12: Multijoueur et Réseau
+
+Introduction aux fonctionnalités multijoueurs.
+Mise en réseau de jeux avec Unreal Engine.
+Implémentation de fonctionnalités multijoueurs simples.
+Semaine 13-14: Optimisation et Déploiement
+
+Techniques d'optimisation pour améliorer les performances.
+Préparation d'un projet pour le déploiement.
+Options de publication et de distribution.
+Semaine 15: Projet Final
+
+Les étudiants travaillent sur leur projet final.
+Séances de consultation individuelle.
+Semaine 16: Présentation des Projets Finaux
+
+Présentation des projets finaux.
+Discussions et rétroactions.
+Évaluation:
+
+Projets pratiques (50%)
+Examen final (20%)
+Participation en classe et devoirs (15%)
+Projet final et présentation (15%)
+N'oubliez pas d'ajuster les détails en fonction du niveau d'expérience de vos étudiants, de l'environnement d'apprentissage spécifique et des ressources disponibles. Ce syllabus est un point de départ générique et peut être adapté en fonction de vos besoins spécifiques.
+
+
+
+
+
+
+
+
+
+Le cours "Introduction au Développement de Jeux avec Unreal Engine" forme les étudiants à plusieurs compétences métiers liées au développement de jeux interactifs. Voici quelques-unes des compétences clés que les étudiants pourraient acquérir au cours de ce programme :
+
+Maîtrise d'Unreal Engine : Les étudiants développeront une compréhension approfondie du moteur de jeu Unreal Engine, y compris son interface, ses outils de création, et ses fonctionnalités avancées.
+
+Création d'Environnements 3D : Les compétences pour créer des environnements tridimensionnels interactifs, y compris la modélisation 3D, le placement d'objets, l'utilisation de l'éclairage et des caméras.
+
+Programmation avec Blueprints : Les étudiants apprendront à utiliser le système Blueprints d'Unreal Engine pour implémenter la logique de jeu sans nécessiter de programmation traditionnelle.
+
+Développement de Jeux 2D et 3D : La capacité de créer des jeux tant en 2D qu'en 3D, avec une compréhension des différences dans la conception et l'implémentation.
+
+Animation et Cinématiques : Les compétences pour animer des personnages et des objets, ainsi que la création de cinématiques interactives à l'aide du système Sequencer.
+
+Développement Multijoueur : Comprendre les concepts liés aux jeux multijoueurs, y compris la mise en réseau de jeux avec Unreal Engine et l'implémentation de fonctionnalités multijoueurs.
+
+Optimisation des Performances : Savoir comment optimiser les performances d'un jeu, y compris l'utilisation de techniques avancées pour garantir une expérience fluide.
+
+Déploiement de Jeux : La capacité de préparer un projet de jeu pour le déploiement sur différentes plateformes et la compréhension des options de publication et de distribution.
+
+Collaboration et Présentation : Travailler efficacement en équipe sur un projet de jeu et présenter de manière claire et convaincante les résultats du projet.
+
+Résolution de Problèmes : Développer des compétences en résolution de problèmes liés au développement de jeux, que ce soit au niveau de la programmation, du design ou de la performance.
+
+Ces compétences sont cruciales dans l'industrie du jeu vidéo et peuvent être appliquées dans des rôles tels que développeur de jeux, concepteur de niveaux, designer d'environnement, animateur de jeux, etc.
+
+
