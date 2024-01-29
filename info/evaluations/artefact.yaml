@@ -103,3 +103,25 @@ works:
       Un début de travail, mais l'ensemble reste insuffisant. Il faut pousser plus 
       loin la réalisation des différents éléments. Votre proposition doit susciter
       la curiosité. Nous n'y sommes pas.
+
+  TerryZAHN:
+    images:
+      grade: 16
+      comments:
+      - Les images sont "jolies".
+      - La lumière du soleil couchant donne une teinte chaude à l'ensemble. C'est assez réussi.
+      - Il manque en revanche les images de l'artefact...
+    blueprint:
+      grade: 8
+      comments:
+      - Une ouverture de porte, c'est un trop simple, cela ne demande pas de manipulations complexes.
+    materials:
+      grade: 4
+      comments:
+      - Aucun matériaux n'a été créé ici.
+    landscape:
+      grade: 16
+      comments:
+      - Le relief est bien travaillé. Le paysage est convaincant.
+      - Présence de foliage (arbres, herbe, buissons, rochers).
+      - Si le décor paraît encore un peu vide par endroit, dans l'essemble c'est plutôt réussi.
