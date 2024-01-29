@@ -75,4 +75,31 @@ works:
       le détail, il aurait pu obtenir un résultat bien plus convaincant.
 
   Qnorguet:
-    
+    images:
+      grade: 12
+      comments:
+      - Les images sont correctement cadrées, la composition est bonne.
+      - Le contenu en revanche est assez monotone.
+      - Les teintes sont ternes.
+    blueprint:
+      grade: 12
+      comments:
+      - La proposition du "tourniquet" est intéressante, mais son déploiement est bcp trop simple.
+      - L'animation des runes est chaotique.
+      - L'interactivité est quasi-inexistante.
+    materials:
+      grade: 12
+      comments:
+      - Le décor a été habillé avec des textures, mais cela reste très simple dans l'ensemble.
+      - Pas de matériaux complexes (pas de normal map, pas de roughness, pas de metallic, etc.)
+    landscape:
+      grade: 6
+      comments:
+      - Les images ne permettent pas de voir le relief.
+      - Des arbres mais c'est tout ?
+      - Pas de foliage (rocher / herbe / buisson / etc.)
+      - Pas d'artefact.
+    mainComment: >-
+      Un début de travail, mais l'ensemble reste insuffisant. Il faut pousser plus 
+      loin la réalisation des différents éléments. Votre proposition doit susciter
+      la curiosité. Nous n'y sommes pas.
