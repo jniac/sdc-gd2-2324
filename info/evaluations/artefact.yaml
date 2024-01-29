@@ -167,6 +167,7 @@ works:
       - Les dernières images en revanche présentant une teinte bleutée originale, attisent la curiosité. Le sous-bois donne envie d'être exploré.
     blueprint:
       grade: 8
+      comments:
       - Un artefact-rune-ascenseur... hm non. L'interactivité ne fait pas "sens". Il faut mettre une intention artisitique derrière la présence de l'artefact.
     materials:
       grade: 8
@@ -177,7 +178,7 @@ works:
       comments:
       - Le sous bois paraît convaincant, et même s'il n'est pas très profond, il donne déjà envie d'être exploré.
       - Le sol amène une touche surréaliste à l'ensemble. 
-      - Le surréalisme, peut-être amené ici par accident, semble une piste intéressante à explorer. Il faut y aller franchement !
+      - Le surréalisme, possiblement arrivé ici par accident, semble une piste intéressante à explorer. Il faut y aller franchement !
     mainComment: >-
       Élodie semble un peu dépassé par la compléxité qu'engendre la réalisation 
       d'assets dans Unreal Engine. Pour autant, en emprunt des chemins détourner
@@ -186,4 +187,30 @@ works:
       c'est une bonne parade. Il faut toutefois aller beaucoup plus loin dans 
       cette voie, sans quoi nous restons pour le moment au seuil de la proposition.
 
-  
+  Millunn-G:
+    images:
+      grade: 16
+      comments:
+      - Les images présentent de grandes qualités plastiques (teintes, camaïeux, travail sur la lumière, etc.)
+      - La composition et le cadrage en revanche sont un peu maladroits (alignement, position du sujet, horizon, etc.)
+      - Par ailleurs la qualité des images est-elle aussi inégales (aliasing, compression, etc.)
+    blueprint:
+      grade: 12
+      comments:
+      - L'artefact présente une modélisation originale (Blender), qui a ensuite été importée dans Unreal.
+      - C'est un bon début. La proposition reste toutefois un peu simple.
+    materials:
+      grade: 10
+      comments:
+      - Les matériaux sont minimalistes, mais au moins ils ont été choisis pour servir un effet.
+      - On regrette toutefois qu'il n'y ait pas eu de travail sur les matériaux de l'artefact. La modélisation originale accompagnée de matériaux complexes aurait pu donner un résultat très convaincant.
+    landscape:
+      grade: 12
+      comments:
+      - Le paysage est un peu maladroit (élévations simples, relief peu travaillé, espaces vides, etc.).
+      - Toutefois il se dégage une ambiance intéressante de l'ensemble. Entre pochette de disque éléctro / psychédélique et paysage de science-fiction, il y a quelque chose à creuser.
+      - Les ingrédients sont présents, il faut maintenant les travailler.
+    mainComment: >-
+      Adrien paraît parfois un peu perdu dans la réalisation de son projet. Il 
+      montre toutefois une certaine constance dans ses efforts. Et il est parvenu
+      à produire une scène originale qui a le grand mérite de susciter la curiosité.
