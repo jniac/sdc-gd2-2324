@@ -36,5 +36,5 @@ Dossier de travail de ${student.names.join(' ')}
   }
 }
 
-const unrealArtFolder = '/Users/joseph/Documents/Unreal Projects/SDC_GD2_2324_UE5_V2/Content/Art'
+const unrealArtFolder = '/Users/joseph/Documents/Unreal Projects/SDC_GD2_2324_UE5_LSP/Content/Art'
 console.log(`unreal folders: ${await createFolders(unrealArtFolder, ({ prefix, github }) => `${prefix}_${github}`)}`)

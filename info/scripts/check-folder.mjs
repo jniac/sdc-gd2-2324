@@ -1,17 +1,6 @@
 import fs from 'fs/promises'
-import yaml from 'js-yaml'
 import chalk from 'chalk'
-
-/**
- * @typedef {object} Student
- * @property {string[]} names
- * @property {string} github
- * @property {string} prefix
- */
-
-/** @type {{ promotion: Student[] }} */
-const data = await fs.readFile('../promotion.yaml', { encoding: 'utf-8' })
-  .then(text => yaml.load(text))
+import { data } from './data.mjs'
 
 /**
  * 
