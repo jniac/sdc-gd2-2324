@@ -106,11 +106,11 @@ works:
 
   TerryZAHN:
     images:
-      grade: 16
+      grade: 12
       comments:
       - Les images sont "jolies".
       - La lumière du soleil couchant donne une teinte chaude à l'ensemble. C'est assez réussi.
-      - Il manque en revanche les images de l'artefact...
+      - Il manque en revanche une vidéo de l'artefact...
     blueprint:
       grade: 8
       comments:
@@ -125,3 +125,65 @@ works:
       - Le relief est bien travaillé. Le paysage est convaincant.
       - Présence de foliage (arbres, herbe, buissons, rochers).
       - Si le décor paraît encore un peu vide par endroit, dans l'essemble c'est plutôt réussi.
+    mainComment: >-
+      Terry a une nette préférence pour la constitution de paysages. C'est une
+      bien. Mais il ne faut pas négliger pour autant la réalisation des autres
+      éléments. Avec un artefact à la hauteur de l'environement, le résultat
+      aurait pu être bluffant.
+
+  Racodylanou:
+    images:
+      grade: 16
+      comments:
+      - Les images sont de bonne facture (composition / cadrage).
+      - L'ambiance générale toutefois est trop proche de la scène par défaut, cela ne met pas en valeur le "vault".
+    blueprint:
+      grade: 20
+      comments:
+      - Mais oui, enfin une proposition créative qui tient la route. 
+      - L'animation est bien excellente. Cela donne envie d'en voir davantage.
+    materials:
+      grade: 12
+      comments:
+      - Les matériaux sont minimalistes, mais l'ensemble est cohérent.
+      - Avec des matériaux plus complexes (hologrames, animation), cela aurait pu être vraiment excellent.
+    landscape:
+      grade: 8
+      comments:
+      - Hey ? Une seule image, vu de loin ? C'est tout ?
+      - Le relief est trop pauvre, le décor est trop vide.
+      - Pourtant là ou il y a de la matière le résultat semble assez convaincant. Alors ? Pourquoi s'arrêter en si bon chemin ? Pourquoi ne pas founir une image vue du sol ?
+    mainComment: >-
+      Excellent travail de blueprint, Dylan a compris comment "rigger" un objet
+      dans Unreal. C'est un très bon point de départ pour des réalisations plus 
+      vertigineuses encore.
+
+  Ecaritey:
+    images: 
+      grade: 12
+      comments:
+      - "Un renu schizophrène : les premières images sont maladroites, bancales, les dernières sont plutôt réussies et donnent envie d'en (sa)voir plus."
+      - Les premières images de l'artefact sont difficiles à appréhender. Le personnage paraît flotter dans les airs. On ne comprend pas le sol. Le bloc violet est informe, illisible.
+      - Les dernières images en revanche présentant une teinte bleutée originale, attisent la curiosité. Le sous-bois donne envie d'être exploré.
+    blueprint:
+      grade: 8
+      - Un artefact-rune-ascenseur... hm non. L'interactivité ne fait pas "sens". Il faut mettre une intention artisitique derrière la présence de l'artefact.
+    materials:
+      grade: 8
+      comments:
+      - Un usage créatif des matériaux est présent. Mais pour autant, excepté le sol du sous-bois, pas de matériaux complexes (hologrammes, animation, etc.)
+    landscape:
+      grade: 12
+      comments:
+      - Le sous bois paraît convaincant, et même s'il n'est pas très profond, il donne déjà envie d'être exploré.
+      - Le sol amène une touche surréaliste à l'ensemble. 
+      - Le surréalisme, peut-être amené ici par accident, semble une piste intéressante à explorer. Il faut y aller franchement !
+    mainComment: >-
+      Élodie semble un peu dépassé par la compléxité qu'engendre la réalisation 
+      d'assets dans Unreal Engine. Pour autant, en emprunt des chemins détourner
+      elle paraît prendre du plaisir à mettre en scène des environnements 
+      surréalistes. Si c'est une façon de contourner les difficultés techniques,
+      c'est une bonne parade. Il faut toutefois aller beaucoup plus loin dans 
+      cette voie, sans quoi nous restons pour le moment au seuil de la proposition.
+
+  
