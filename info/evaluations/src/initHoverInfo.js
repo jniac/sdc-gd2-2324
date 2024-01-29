@@ -17,10 +17,24 @@ function hide() {
   hoverInfoElement.classList.add('hidden')
 }
 
+function formatHeaderText(criterion) {
+  return `
+  <h3>${criterion.name}</h3>
+  <div>
+    ${criterion.desc.join('<br>')}
+  </div>
+  <ul>
+    ${criterion.details.map(str => `<li>${str}</li>`).join('\n')}
+  </ul>
+`
+}
+
 function getCriterionText(criterion, work) {
   return `
     <h3>${criterion.name}</h3>
-    ${work[criterion.id]?.comments.join('<br>')}
+    <ul>
+      ${work[criterion.id]?.comments.map(str => `<li>${str}</li>`).join('\n')}
+    </ul>
   `
 }
 
@@ -40,15 +54,7 @@ export function initHoverInfo() {
       const rect = element.getBoundingClientRect()
 
       if (id === 'header') {
-        const text = `
-          <h3>${criterion.name}</h3>
-          <div>
-            ${criterion.desc.join('<br>')}
-          </div>
-          <ul>
-            ${criterion.details.map(str => `<li>${str}</li>`).join('\n')}
-          </ul>
-        `
+        const text = formatHeaderText(criterion)
         show(rect, text)
       }
 

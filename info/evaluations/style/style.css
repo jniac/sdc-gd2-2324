@@ -5,7 +5,9 @@
 
 :root {
   font-family: 'Inter', sans-serif;
-  --accent-color: #6c6763;
+  --accent-color: #443e4a;
+  color: #201c23;
+  background-color: #ddd;
 }
 
 .hover-info-link:hover {
@@ -13,6 +15,10 @@
   background-color: white;
   color: var(--accent-color);
   border-radius: 2px;
+}
+
+ul {
+  padding-left: 1em;
 }
 
 section.title {

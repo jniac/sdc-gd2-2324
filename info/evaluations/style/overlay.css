@@ -20,7 +20,7 @@
     background-color: #fffc;
     backdrop-filter: blur(16px);
     box-shadow: #0006 0 0 16px;
-    border-radius: .5em;
+    border-radius: 4px;
 
     foo {}
 
