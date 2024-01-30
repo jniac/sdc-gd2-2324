@@ -214,3 +214,25 @@ works:
       Adrien paraît parfois un peu perdu dans la réalisation de son projet. Il 
       montre toutefois une certaine constance dans ses efforts. Et il est parvenu
       à produire une scène originale qui a le grand mérite de susciter la curiosité.
+
+  Juansupdecreation:
+    images:
+      grade: 12
+      comments:
+      - Les images sont trop attendues. Le sujet n'est pas assez mis en valeur.
+      - Il manque un cadre serré sur l'artefact pour pouvoir apprécié le travail fait sur le shader.
+    blueprint:
+      grade: 16
+      comments:
+      - L'artefact réagit à la présence du joueur en changeant l'aspect du matériau principal (ouverture de portail dimensionel).
+      - L'artefact est original, mais la proposition reste un peu simple (si on met de coté le travail sur le shader, lequel évalué dans "materials"). On aurait aimé voir les éléments en suspension s'animer de concert avec le portail.
+    materials:
+      grade: 18
+      comments:
+      - Un super travail de shader. 
+      - C'est un excellent point de départ, et cela pourrait être encore plus réussi en travaillant l'aspect esthétique général de l'artefact.
+    landscape:
+      grade: 12
+      comments:
+      - Un début de travail sur le landscape (élévation, relief, etc.), mais cela reste encore trop simple.
+      - Pas de foliage (hormis les arbres), c'est dommage ! Avec quelques rochers, des buissons, des fougères ou que sais-je le résultat pourrait être bien plus convaincant.
