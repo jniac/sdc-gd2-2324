@@ -6,23 +6,33 @@
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-
+  
   foo {}
-
+  
   > * {
     pointer-events: auto;
   }
-
+  
   .hover-info {
     position: absolute;
     width: max(60vw, 400px);
     padding: 2em;
     background-color: #fffc;
     backdrop-filter: blur(16px);
-    box-shadow: #0006 0 0 16px;
+    box-shadow:
+      rgba(0, 44, 105, 0.4) 0 0 24px,
+      rgba(0, 65, 157, 0.1) 0 0 4px;
     border-radius: 4px;
 
     foo {}
+
+    h3 {
+      font-weight: normal;
+      font-size: 1em;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      border-bottom: var(--alt-accent-color) 1px solid;
+    }
 
     &.hidden {
       display: none;

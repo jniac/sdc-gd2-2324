@@ -5,7 +5,12 @@
 
 :root {
   font-family: 'Inter', sans-serif;
-  --accent-color: #443e4a;
+  --main-color: #443e4a;
+  --accent-color: rgb(0, 65, 157);
+  --alt-accent-color: rgb(232, 224, 0);
+  --circle-r: 100px;
+  --circle-x: 50%;
+  --circle-y: 50%;
   color: #201c23;
   background-color: #ddd;
 }
@@ -20,6 +25,10 @@
 
 ul {
   padding-left: 1em;
+}
+
+a {
+  color: var(--accent-color);  
 }
 
 section.title {
@@ -51,7 +60,7 @@ section.evaluation {
 
   .row {
     --border-color: #0002;
-    --link-color: var(--accent-color);
+    --link-color: var(--main-color);
     --link-background-color: transparent;
     
     z-index: 0; /* necessary for the ::before to work */
@@ -68,7 +77,7 @@ section.evaluation {
       --border-color: #fff2;
       --link-color: #fff;
 
-      background-color: var(--accent-color);
+      background-color: var(--main-color);
       color: white;
 
       foo {}
@@ -78,7 +87,7 @@ section.evaluation {
       }
       
       a {
-        color: Yellow;
+        color: var(--alt-accent-color);
         text-decoration: none;
       }      
     }
@@ -104,8 +113,9 @@ section.evaluation {
       foo {}
 
       &:hover {
-        color: var(--accent-color);
+        color: var(--main-color);
         cursor: none;
+        text-decoration: underline;
       }
 
       &::before {
@@ -117,6 +127,7 @@ section.evaluation {
         height: calc(100% - 2px);
         border-radius: 2px;
         background-color: white;
+        background-image: radial-gradient(var(--circle-r) at var(--circle-x) var(--circle-y), transparent, var(--alt-accent-color)) ;
         z-index: -1;
         display: none;
       }

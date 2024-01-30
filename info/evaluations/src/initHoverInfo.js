@@ -67,6 +67,17 @@ export function initHoverInfo() {
       }
     })
 
+    element.addEventListener('pointermove', event => {
+      const rect = event.target.getBoundingClientRect()
+      const x = (event.x - rect.left)
+      const y = (event.y - rect.top)
+      const left = x / rect.width * 100
+      const top = y / rect.height * 100
+      event.target.style.setProperty('--circle-x', `${left.toFixed()}%`)
+      event.target.style.setProperty('--circle-y', `${top.toFixed()}%`)
+      event.target.style.setProperty('--circle-r', `${rect.width * .8}px`)
+    })
+
     element.addEventListener('pointerout', () => {
       hide()
     })
