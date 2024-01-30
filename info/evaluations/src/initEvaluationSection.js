@@ -17,7 +17,7 @@ function row({
 
   criteria ??= artefactEvaluation.criteria.map(criterion => criterion.name)
   const criteriaStr = criteria.map((criterion, index) => {
-    return `<div data-criterion-id="${artefactEvaluation.criteria[index].id}" class="criterion hover-info-link">${criterion}</div>`
+    return `<div data-criterion-id="${artefactEvaluation.criteria[index].id}" class="criterion hover-info-link ${criterion ? '' : 'empty'}">${criterion}</div>`
   }).join('\n')
 
   div.innerHTML = /* html */ `
