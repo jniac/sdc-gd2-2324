@@ -16,7 +16,7 @@
 }
 
 .hover-info-link {
-  foo {}
+  & foo {}
 
   &.empty {
     pointer-events: none;
@@ -35,19 +35,19 @@ section.title {
   padding: 2em 0 0 0;
   text-align: center;
 
-  foo {}
+  & foo {}
 
-  h1 {
+  & h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
   }
 
-  *:not(h1) {
+  & *:not(h1) {
     font-weight: normal;
     font-size: 12px;
   }
 
-  * + * {
+  & * + * {
     margin-top: 0.5em;
   }
 }
@@ -56,9 +56,9 @@ section.evaluation {
   padding: 4em;
   font-size: 14px;
 
-  foo {}
+  & foo {}
 
-  .row {
+  & .row {
     --border-color: #0002;
     --link-color: var(--main-color);
     --link-background-color: transparent;
@@ -71,7 +71,7 @@ section.evaluation {
     border-radius: 2px;
     height: 2.3em;
     
-    foo {}
+    & foo {}
     
     &:hover {
       --border-color: #fff2;
@@ -80,19 +80,19 @@ section.evaluation {
       background-color: var(--main-color);
       color: white;
 
-      foo {}
+      & foo {}
 
-      .hover-info-link {
+      & .hover-info-link {
         --link-color: #fff;
       }
       
-      a {
+      & a {
         color: var(--alt-accent-color);
         text-decoration: none;
       }      
     }
 
-    > * {
+    & > * {
       overflow: hidden;
       text-overflow: ellipsis;
       display: flex;
@@ -101,16 +101,16 @@ section.evaluation {
       justify-content: center;
     }
 
-    > * + * {
+    & > * + * {
       margin-left: 4px;
     }
 
-    > :is(.criterion, .total) {
+    & > :is(.criterion, .total) {
       margin-left: 0px;
 
       border: var(--border-color) 1px solid;
 
-      foo {}
+      & foo {}
 
       &:hover {
         color: var(--main-color);
@@ -147,24 +147,24 @@ section.evaluation {
       }
     }
 
-    .mono {
+    & .mono {
       font-family: "Fira Code", monospace;
       font-size: 11px;
       font-weight: 500;
     }
 
-    .index {
+    & .index {
       padding: .25em;
       opacity: 0.25;
       flex: 0 0 1.5em;
       text-align: center;
     }
 
-    .names {
+    & .names {
       flex: 0 0 12em;
     }
     
-    .ids {
+    & .ids {
       flex: 0 0 15em;
       flex-direction: row;
       justify-content: flex-start;
@@ -175,11 +175,11 @@ section.evaluation {
       }
     }
 
-    .page {
+    & .page {
       flex: 0 0 6em;
     }
 
-    .criterion, .total {
+    & .criterion, .total {
       flex: 0 0 8em;
       text-align: center;
     }
