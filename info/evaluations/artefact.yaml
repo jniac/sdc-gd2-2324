@@ -294,16 +294,27 @@ works:
       comments:
       - Les images ont été retravaillées et sont maintenant très réussies.
       - Le contraste bleu / rouge orangé est très efficace.
-    blueprint:
+    blueprint-old-1:
       grade: 16
       comments:
       - L'artefact réagit à la présence du joueur en changeant l'aspect du matériau principal (ouverture de portail dimensionel).
       - L'artefact est original, mais la proposition reste un peu simple (si on met de coté le travail sur le shader, lequel évalué dans "materials"). On aurait aimé voir les éléments en suspension s'animer de concert avec le portail.
-    materials:
+    blueprint:
+      grade: 18
+      comments:
+      - L'artefact réagit à la présence du joueur en changeant l'aspect du matériau principal (ouverture de portail dimensionel).
+      - L'artefact est original, la présence de la lumière bleue permet à l'ensemble de gagner en cohérence et en présence (couleur, reflets, intégration dans l'environnement).
+      - La mise en place d'un effet de particule aurait peut-être pu augmenter encore l'impact de la proposition.
+      - "Il ne manque qu'une chose : c'est de pouvoir passer au travers !" 
+    materials-old-1:
       grade: 18
       comments:
       - Un super travail de shader. 
       - C'est un excellent point de départ, et cela pourrait être encore plus réussi en travaillant l'aspect esthétique général de l'artefact.
+    materials:
+      grade: 20
+      comments:
+      - Un super travail de shader très bien mis en valeur par la lumière bleutée (point light) qui l'accompagne.
     landscape-old-1:
       grade: 12
       comments:
@@ -315,6 +326,11 @@ works:
       - Un paysage intéressant et convaincant.
       - L'intégration de l'artefact dans le paysage est remarquable (lumières, reflets, etc.)
       - On aurait aimé en voir davantage (les deux images sont très proches, il manque de nouveaux angles de vue).
+    mainComment: >-
+      Juan est très à l'aise sur Unreal Engine. Il a compris comment réaliser des
+      blueprints complexes, comment travailler les matériaux, y compris pour la
+      production de shader originaux. Il demande peu d'aide et fait preuve de bcp
+      d'autonomie. Excellent profil. 
 
   Adla6t:
     images:
@@ -399,6 +415,13 @@ works:
       comments:
       - Le paysage est un peu trop simple. Le relief est correct, mais il manque de détails.
       - Pas de foliage, hormis les arbres le sol est tout à fait vide, c'est dommage ! 
+    mainComment: >-
+      Han Na paraît ne pas manquer d'un certain sens de la débrouille, et semble 
+      capable d'affronter les difficultés techniques. Malheureusement son implication
+      en classe est très insuffisante dans l'ensemble, et très intermittente au 
+      quotidien. Il faut se montrer plus assidu, et plus régulier dans l'effort,
+      afin que la personnalité d'Han Na puisse s'exprimer pleinement dans des 
+      univers virtuels.
 
   Imasma:
     images:
@@ -480,6 +503,9 @@ works:
       grade: 12
       comments:
       - Le paysage est assez réussi, mais... il ne s'y trouve pas d'artefact ! Ce qui devait inviter à l'exploration est absent de la scène qui nous est présentée.
+    mainComment: >-
+      Ruben paraît assez débrouillard, malheureusement son implication ici n'est pas 
+      suffisante pour que cela se traduise par un résultat convaincant. C'est dommage.
 
   scrapsofseaweed:
     images:
@@ -503,3 +529,7 @@ works:
       grade: 11
       comments:
       - Le paysage est un peu trop simple. Le relief n'est pas trop mal, il est même assez intéressant et fourni un horizon convaincant, mais la scène reste vide et paraît inachevé.  
+    mainComment: >-
+      Anthéa travaille en marge du cours ce qui rend le suivi de son travail difficile.
+      Elle a toutefois produit un travail convaincant. Ce qui laisse à penser qu'en
+      de meilleurs circonstances Anthéa pourrait produire des travaux remarquables.

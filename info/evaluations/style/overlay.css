@@ -15,7 +15,7 @@
   
   & .hover-info {
     position: absolute;
-    width: max(60vw, 400px);
+    width: min(90vw, 600px);
     padding: 2em;
     background-color: #fff9;
     backdrop-filter: blur(16px);
