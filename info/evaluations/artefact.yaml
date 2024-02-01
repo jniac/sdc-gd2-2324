@@ -56,7 +56,7 @@ criteria:
   details:
   - Assiduité
   - Participation aux discussions
-  - Aide aux autres
+  - Aide aux camarades
 
 works:
   IAmSoDIM:
@@ -85,10 +85,9 @@ works:
       - On voit le "bord" du terrain 😬
       - Quelques arbres, mais pas de foliage en dehors de cela (pas d'herbe, de buisson, de rochers etc.).
     participation:
-      grade: 1
+      grade: 2
       comments:
-      - Dimitri apporte son aide à ses camarades.
-      - Le travail n'a pas été rendu via github !
+      - Dimitri apporte (beaucoup) son aide à ses camarades.
     mainComment: >-
       Un travail qui manque de finition. C'est dommage car Dimitri semble avoir 
       compris le fonctionnement général des blueprints dans Unreal Engine. En soignant 
@@ -146,7 +145,7 @@ works:
       - Présence de foliage (arbres, herbe, buissons, rochers).
       - Si le décor paraît encore un peu vide par endroit, dans l'essemble c'est plutôt réussi.
     participation:
-      grade: 1
+      grade: 2
       comments:
       - Terry aide nombre de ses camarades.
       - C'est grâce à lui que certains ont pu terminer leur projet.
