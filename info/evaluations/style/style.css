@@ -7,6 +7,7 @@
   font-family: 'Inter', sans-serif;
   --main-color: #443e4a;
   --accent-color: rgb(0, 65, 157);
+  --accent-color-light: rgb(152, 195, 255);
   --alt-accent-color: rgb(232, 224, 0);
   --bonus-color: #007d5c;
   --bonus-color-light: #00d49c;
@@ -41,10 +42,26 @@ a {
   }
 }
 
-section.title {
+button {
+  border: solid 1px var(--main-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color-light);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section.title {
   padding: 2em 0 0 0;
   text-align: center;
 
@@ -66,9 +83,6 @@ section.title {
 }
 
 section.evaluation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 4em;
   font-size: 12px;
 
@@ -81,7 +95,7 @@ section.evaluation {
     
     z-index: 0; /* necessary for the ::before to work */
     display: flex;
-    width: 86em;
+    width: min(86em, 100%);
     flex-direction: row;
     align-items: stretch;
     padding: 2px 2px;
@@ -126,7 +140,7 @@ section.evaluation {
     }
 
     & > :is(.criterion, .total) {
-      flex: 0 1 8em;
+      flex: 1 1 8em;
       text-align: center;
       margin-left: 0px;
 

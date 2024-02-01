@@ -47,12 +47,12 @@ export function initEvaluationSection() {
     const { names, github, prefix } = student
     const page = `../../art/${github}/artefact/`
 
-    let criteria = artefactEvaluation.criteria.map(() => '')
-    let total = '-'
+
+    let criteria = artefactEvaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : '')
+    let total = '0'
 
     const work = artefactEvaluation.works[github]
     if (work) {
-
       const bonus = bonusCriteria.reduce((sum, criterion) =>
         sum + (work[criterion.id]?.grade ?? 0), 0)
 

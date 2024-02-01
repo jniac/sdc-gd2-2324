@@ -35,6 +35,7 @@ export const promotion = await loadYaml(`../promotion.yaml`)
  * @typedef {{
  *   id: string
  *   name: string
+ *   mode: 'regular' | 'bonus/penalty'
  *   gradeWeight: number
  *   desc: string[]
  *   details: string[]
@@ -45,13 +46,16 @@ export const promotion = await loadYaml(`../promotion.yaml`)
  *   comments: string[]
  * }} CriterionEvaluation
  * 
+ * @typedef {Record<string, CriterionEvaluation>} Work
+ * 
  * @typedef {{
  *   exerciseName: string
  *   mainComment: string
  *   criteria: Criterion[]
  *   regularCriteria: Criterion[]
  *   bonusCriteria: Criterion[]
- *   works: Record<string, Record<string, CriterionEvaluation>>
+ *   works: Record<string, Work>
+ *   computeWorkGrades: (work?: Work) => { grades: number[], bonus: number, totalGrade: number }
  * }} Evaluation
  */
 
@@ -63,5 +67,18 @@ artefactEvaluation.regularCriteria = artefactEvaluation.criteria
 
 artefactEvaluation.bonusCriteria = artefactEvaluation.criteria
   .filter(criterion => criterion.mode === 'bonus/penalty')
+
+artefactEvaluation.computeWorkGrades = (work) => {
+  const { regularCriteria, bonusCriteria } = artefactEvaluation
+  const bonus = bonusCriteria.reduce((sum, criterion) => {
+    const grade = work?.[criterion.id]?.grade ?? 0
+    return sum + grade
+  }, 0)
+  const grades = regularCriteria.map(criterion => (work?.[criterion.id]?.grade ?? 0) + bonus)
+  const gradesWeights = regularCriteria.map(criterion => criterion.gradeWeight)
+  const totalGradeWeight = gradesWeights.reduce((sum, weight) => sum + weight, 0)
+  const totalGrade = Math.round(grades.reduce((sum, grade, i) => sum + grade * gradesWeights[i], 0) / totalGradeWeight * 10) / 10
+  return { grades, bonus, totalGrade }
+}
 
 export { artefactEvaluation }
