@@ -7,6 +7,7 @@ document.querySelector('button#csv').onclick = () => {
       'Prénoms',
       ...artefactEvaluation.regularCriteria.map(criterion => `Artefact / ${criterion.name}`),
       'Total',
+      'Commentaire général',
     ],
     ...promotion.promotion.map(({ names, github }) => {
       const [firstName, lastName] = names
@@ -17,6 +18,7 @@ document.querySelector('button#csv').onclick = () => {
         firstName,
         ...grades,
         totalGrade,
+        work?.mainComment ?? '',
       ]
     }),
   ])

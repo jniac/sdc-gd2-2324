@@ -53,7 +53,7 @@ export function initHoverInfo() {
       const id = element.parentElement.dataset.id
       const rect = element.getBoundingClientRect()
 
-      if (id === 'header') {
+      if (id === 'header' && criterion) {
         const text = formatHeaderText(criterion)
         show(rect, text)
       }

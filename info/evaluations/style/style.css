@@ -116,8 +116,6 @@ section.evaluation {
   padding: 4em;
   font-size: 12px;
 
-  & foo {}
-
   & .row {
     --border-color: #0002;
     --link-color: var(--main-color);
@@ -132,16 +130,12 @@ section.evaluation {
     border-radius: 6px;
     height: 2.3em;
     
-    & foo {}
-    
     &:hover {
       --border-color: #fff2;
       --link-color: #fff;
 
       background-color: var(--main-color);
       color: white;
-
-      & foo {}
 
       & .bonus-penalty.bonus {
         color: var(--bonus-color-light);
@@ -175,8 +169,6 @@ section.evaluation {
       margin-left: 0px;
 
       border: var(--border-color) 1px solid;
-
-      & foo {}
 
       & > * {
         display: flex;
