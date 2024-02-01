@@ -53,8 +53,7 @@ export function initEvaluationSection() {
 
     const work = artefactEvaluation.works[github]
     if (work) {
-      const bonus = bonusCriteria.reduce((sum, criterion) =>
-        sum + (work[criterion.id]?.grade ?? 0), 0)
+      const { bonus, totalGrade } = artefactEvaluation.computeWorkGrades(work)
 
       const isBonus = bonus > 0
       const bonusStr = bonus !== 0 ? `${isBonus ? '+' : '-'}${bonus}` : ''
@@ -68,17 +67,13 @@ export function initEvaluationSection() {
         }
 
         const innerHTML = bonusStr
-          ? `${base + bonus} <span class="bonus-penalty small ${bonusClass}">(${bonusStr})</span>`
+          ? `${base + bonus} <span class="bonus-penalty small ${bonusClass}">(${base}${bonusStr})</span>`
           : base
 
         return `<div>${innerHTML}</div>`
       })
 
-      total = regularCriteria.reduce((sum, criterion) => {
-        return sum + (work[criterion.id]?.grade ?? 0) * criterion.gradeWeight
-      }, 0) / regularCriteria.reduce((sum, criterion) => criterion.gradeWeight + sum, 0)
-
-      total += bonus
+      total = totalGrade
     }
 
     const div = row({
