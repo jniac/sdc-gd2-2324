@@ -172,7 +172,7 @@ works:
       grade: 2
       comments:
       - Terry aide nombre de ses camarades. C'est grâce à lui que certains ont pu terminer leur projet.
-      - Terry explore Unreal par lui-même en suivant des tutoriels. Il a ainsi pu réaliser des travaux assez conséquents. C'est une bonne initiative.
+      - Terry explore Unreal par lui-même en suivant des tutoriels. Il a ainsi pu réaliser en dehors du cours des travaux assez conséquents. C'est une bonne initiative.
     mainComment: >-
       Terry a une nette préférence pour la constitution de paysages. C'est une
       bien. Mais il ne faut pas négliger pour autant la réalisation des autres
@@ -480,3 +480,26 @@ works:
       grade: 12
       comments:
       - Le paysage est assez réussi, mais... il ne s'y trouve pas d'artefact ! Ce qui devait inviter à l'exploration est absent de la scène qui nous est présentée.
+
+  scrapsofseaweed:
+    images:
+      grade: 14
+      comments:
+      - Les images sont correctement cadrées / composées.
+      - Le contre-jour sur la porte entrouverte est une image particulièrement réussie.
+      - Malheureusement il manque un peu d'images du coté du landscape.
+    blueprint:
+      grade: 14
+      comments:
+      - La porte tournante est un excellent exemple de blueprint simple mais efficace.
+      - On regrette que cela soit le seul exemple, un second blueprint de ce type et le résultat aurait été excellent.
+    materials:
+      grade: 16
+      comments:
+      - Un travail de matériaux globalement convaincant.
+      - Certaines textures apparaissent étirées.
+      - Mais l'équilibres des matières est très juste. C'est bien.
+    landscape:
+      grade: 11
+      comments:
+      - Le paysage est un peu trop simple. Le relief n'est pas trop mal, il est même assez intéressant et fourni un horizon convaincant, mais la scène reste vide et paraît inachevé.  
