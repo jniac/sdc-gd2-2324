@@ -49,9 +49,19 @@ export const promotion = await loadYaml(`../promotion.yaml`)
  *   exerciseName: string
  *   mainComment: string
  *   criteria: Criterion[]
+ *   regularCriteria: Criterion[]
+ *   bonusCriteria: Criterion[]
  *   works: Record<string, Record<string, CriterionEvaluation>>
  * }} Evaluation
  */
 
 /** @type{Evaluation} */
-export const artefactEvaluation = await loadYaml(`./artefact.yaml`)
+const artefactEvaluation = await loadYaml(`./artefact.yaml`)
+
+artefactEvaluation.regularCriteria = artefactEvaluation.criteria
+  .filter(criterion => criterion.mode === 'regular')
+
+artefactEvaluation.bonusCriteria = artefactEvaluation.criteria
+  .filter(criterion => criterion.mode === 'bonus/penalty')
+
+export { artefactEvaluation }

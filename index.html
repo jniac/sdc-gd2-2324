@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sdc-gd2-2324</title>
-    <style>
-      @import url(https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=block);
-      body, body * {
-        box-sizing: border-box;
-        position: relative;
-        margin: 0;
-      }
-      :root {
-        font-family: 'Fira Mono', monospace;
-        color: #08294e;
-      }
-      main {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #d8d9de;
-      }
-      .table {
-        background-color: #fff6;
-        padding: 32px;
-        border-radius: 8px;
-      }
-      table {
-        border-collapse: collapse;
-        --border-color: #0d53af;
-      }
-      table th {
-        font-size: .66em;
-        font-weight: normal;
-      }
-      table :is(th, td) {
-        padding: 4px 8px;
-      }
-      table tbody > tr :is(th, td) {
-        border-top: solid 1px var(--border-color);
-      }
-      table :is(th + th, td + td)::before {
-        content: '';
-        position: absolute;
-        top: 2px;
-        bottom: 2px;
-        left: 0;
-        width: 1px;
-        background-color: var(--border-color);
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="table">
-        <table>
-          <thead>
-            <tr>
-              <th>name</th>
-              <th>github</th>
-              <th>prefix</th>
-              <th>combo</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </main>
 
-    <script type="module">
-      import yaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sdc-gd2-2324</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=block);
 
-      const data = await window
-        .fetch('info/promotion.yaml')
-        .then(response => response.text())
-        .then(text => yaml.load(text))
+    body,
+    body * {
+      box-sizing: border-box;
+      position: relative;
+      margin: 0;
+    }
 
-      const tbody = document.querySelector('table tbody')
-      tbody.innerHTML = data.promotion
-        .map(student => {
-          const { names, github, prefix } = student
-          return /* html */ `
+    :root {
+      font-family: 'Fira Mono', monospace;
+      color: #08294e;
+    }
+
+    ul {
+      padding-left: 1em;
+      margin: 1em;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #d8d9de;
+    }
+
+    .table {
+      background-color: #fff6;
+      padding: 32px;
+      border-radius: 8px;
+    }
+
+    table {
+      border-collapse: collapse;
+      --border-color: #0d53af;
+    }
+
+    table th {
+      font-size: .66em;
+      font-weight: normal;
+    }
+
+    table :is(th, td) {
+      padding: 4px 8px;
+    }
+
+    table tbody>tr :is(th, td) {
+      border-top: solid 1px var(--border-color);
+    }
+
+    table :is(th + th, td + td)::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      left: 0;
+      width: 1px;
+      background-color: var(--border-color);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <ul>
+      <li>
+        <a href="info/evaluations/">info/evaluations/</a>
+      </li>
+    </ul>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>github</th>
+            <th>prefix</th>
+            <th>combo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script type="module">
+    import yaml from 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm'
+
+    const data = await window
+      .fetch('info/promotion.yaml')
+      .then(response => response.text())
+      .then(text => yaml.load(text))
+
+    const tbody = document.querySelector('table tbody')
+    tbody.innerHTML = data.promotion
+      .map(student => {
+        const { names, github, prefix } = student
+        return /* html */ `
             <tr>
               <td>${names.join(' ')}</td>
               <td><a href="https://github.com/${github}">${github}</a></td>
@@ -91,8 +113,9 @@
               <td>${prefix}_${github}</td>
             </tr>
           `
-        })
-        .join('\n')
-    </script>
-  </body>
+      })
+      .join('\n')
+  </script>
+</body>
+
 </html>

@@ -8,6 +8,8 @@
   --main-color: #443e4a;
   --accent-color: rgb(0, 65, 157);
   --alt-accent-color: rgb(232, 224, 0);
+  --bonus-color: #007d5c;
+  --bonus-color-light: #00d49c;
   --circle-r: 100px;
   --circle-x: 50%;
   --circle-y: 50%;
@@ -31,7 +33,18 @@ a {
   color: var(--accent-color);  
 }
 
+.bonus-penalty.bonus {
+  color: var(--bonus-color);
+
+  &.small {
+    font-size: 0.8em;
+  }
+}
+
 section.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2em 0 0 0;
   text-align: center;
 
@@ -53,8 +66,11 @@ section.title {
 }
 
 section.evaluation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 4em;
-  font-size: 14px;
+  font-size: 12px;
 
   & foo {}
 
@@ -65,10 +81,11 @@ section.evaluation {
     
     z-index: 0; /* necessary for the ::before to work */
     display: flex;
+    width: 86em;
     flex-direction: row;
     align-items: stretch;
-    padding: 2px 0;
-    border-radius: 2px;
+    padding: 2px 2px;
+    border-radius: 6px;
     height: 2.3em;
     
     & foo {}
@@ -82,13 +99,16 @@ section.evaluation {
 
       & foo {}
 
+      & .bonus-penalty.bonus {
+        color: var(--bonus-color-light);
+      }
+
       & .hover-info-link {
         --link-color: #fff;
       }
       
       & a {
         color: var(--alt-accent-color);
-        text-decoration: none;
       }      
     }
 
@@ -106,16 +126,29 @@ section.evaluation {
     }
 
     & > :is(.criterion, .total) {
+      flex: 0 1 8em;
+      text-align: center;
       margin-left: 0px;
 
       border: var(--border-color) 1px solid;
 
       & foo {}
 
+      & > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25em;
+        pointer-events: none;
+      }
+
       &:hover {
         color: var(--main-color);
         cursor: none;
-        text-decoration: underline;
+
+        & .bonus-penalty.bonus {
+          color: var(--bonus-color);
+        }
       }
 
       &::before {
@@ -135,10 +168,10 @@ section.evaluation {
         display: block;
       }
       
-      &:nth-child(5) {
+      &:nth-child(6) {
         border-radius: 4px 0 0 4px;
       }
-      &:nth-last-child(-n + 4) {
+      &:nth-last-child(-n + 5) {
         border-left: none;
         border-radius: 0;
       }
@@ -179,9 +212,8 @@ section.evaluation {
       flex: 0 0 6em;
     }
 
-    & .criterion, .total {
-      flex: 0 0 8em;
-      text-align: center;
+    & .art-folder {
+      flex: 0 0 3em;
     }
   }
 }

@@ -5,6 +5,7 @@ mainComment: Commentaire général
 criteria:
 - id: images
   name: Images
+  mode: regular
   gradeWeight: 1
   desc:
   - Les images sont-elles de bonne qualité ? Donnent-elles envie d'en savoir plus ?
@@ -15,6 +16,7 @@ criteria:
 
 - id: blueprint
   name: Blueprint
+  mode: regular
   gradeWeight: 1
   desc: 
   - Complexité / originalité de la proposition
@@ -25,6 +27,7 @@ criteria:
 
 - id: materials
   name: Materials
+  mode: regular
   gradeWeight: 1
   desc:
   - Complexité / originalité des matériaux
@@ -35,6 +38,7 @@ criteria:
 
 - id: landscape
   name: Landscape (x2)
+  mode: regular
   gradeWeight: 2
   desc:
   - Qualité de l'environnement. Le paysage donne-t-il envie d'être exploré ?
@@ -42,6 +46,17 @@ criteria:
   - Modélisation ("sculpt")
   - Usage des "landscape layers"
   - Foliage
+
+- id: participation
+  name: Participation
+  mode: bonus/penalty
+  gradeWeight: 1
+  desc:
+  - Participation en classe
+  details:
+  - Assiduité
+  - Participation aux discussions
+  - Aide aux autres
 
 works:
   IAmSoDIM:
@@ -69,6 +84,11 @@ works:
       - Le relief est pauvre.
       - On voit le "bord" du terrain 😬
       - Quelques arbres, mais pas de foliage en dehors de cela (pas d'herbe, de buisson, de rochers etc.).
+    participation:
+      grade: 1
+      comments:
+      - Dimitri apporte son aide à ses camarades.
+      - Le travail n'a pas été rendu via github !
     mainComment: >-
       Un travail qui manque de finition. C'est dommage car Dimitri semble avoir 
       compris le fonctionnement général des blueprints dans Unreal Engine. En soignant 
@@ -125,6 +145,11 @@ works:
       - Le relief est bien travaillé. Le paysage est convaincant.
       - Présence de foliage (arbres, herbe, buissons, rochers).
       - Si le décor paraît encore un peu vide par endroit, dans l'essemble c'est plutôt réussi.
+    participation:
+      grade: 1
+      comments:
+      - Terry aide nombre de ses camarades.
+      - C'est grâce à lui que certains ont pu terminer leur projet.
     mainComment: >-
       Terry a une nette préférence pour la constitution de paysages. C'est une
       bien. Mais il ne faut pas négliger pour autant la réalisation des autres
@@ -225,11 +250,16 @@ works:
       à produire une scène originale qui a le grand mérite de susciter la curiosité.
 
   Juansupdecreation:
-    images:
+    images-old-1:
       grade: 12
       comments:
       - Les images sont trop attendues. Le sujet n'est pas assez mis en valeur.
       - Il manque un cadre serré sur l'artefact pour pouvoir apprécié le travail fait sur le shader.
+    images:
+      grade: 16
+      comments:
+      - Les images ont été retravaillées et sont maintenant très réussies.
+      - Le contraste bleu / rouge orangé est très efficace.
     blueprint:
       grade: 16
       comments:
@@ -240,11 +270,17 @@ works:
       comments:
       - Un super travail de shader. 
       - C'est un excellent point de départ, et cela pourrait être encore plus réussi en travaillant l'aspect esthétique général de l'artefact.
-    landscape:
+    landscape-old-1:
       grade: 12
       comments:
       - Un début de travail sur le landscape (élévation, relief, etc.), mais cela reste encore trop simple.
       - Pas de foliage (hormis les arbres), c'est dommage ! Avec quelques rochers, des buissons, des fougères ou que sais-je le résultat pourrait être bien plus convaincant.
+    landscape:
+      grade: 14
+      comments:
+      - Un paysage intéressant et convaincant.
+      - L'intégration de l'artefact dans le paysage est remarquable (lumières, reflets, etc.)
+      - On aurait aimé en voir davantage (les deux images sont très proches, il manque de nouveaux angles de vue).
 
   Adla6t:
     images:
@@ -295,6 +331,10 @@ works:
       comments:
       - Un paysage un peu trop simple. Le relief n'est pas trop mal, mais la scène est trop vide.
       - Deux "landscape layers" c'est bien, mais pourquoi ce jaune ? Cela ne fait pas très naturel. Si une intention surréaliste préside ici, la mise en œuvre ne suffit pas à la faire ressortir.
+    participation:
+      grade: 1
+      comments:
+      - Julie est volontaire et pose des questions pertinentes en classe.
     mainComment: >-
       Julie est très compatible avec Unreal Engine. Elle a compris comment réaliser
       des effets compliqués, comment jouer avec les différents nœuds de la programmation
@@ -303,3 +343,23 @@ works:
       donné la peine de masquer l'interface de l'éditeur. La motivation est là,
       mais il faut à présent se soucier de concrétiser les intentions artistiques.
       En bref, un excellent potentiel qui demande à être canalisé.
+
+  y3ll0wNaNa:
+    images:
+      grade: 10
+      comments:
+      - Hm. C'est très "sobre". On croirait voir des captures d'écran du template fourni par Unreal.
+      - Les images sont correctement cadrées / composées. Mais il manque une intention artistique.
+    blueprint:
+      grade: 8
+      comments:
+      - Une porte qui s'ouvre... et rien d'autre ! C'est trop simple. Il manque une intention artistique.
+    materials:
+      grade: 4
+      comments:
+      - Pas de travail sur les matériau (hormis le sol du "landscape", mais il apparaît non abouti).
+    landscape:
+      grade: 10
+      comments:
+      - Le paysage est un peu trop simple. Le relief est correct, mais il manque de détails.
+      - Pas de foliage, hormis les arbres le sol est tout à fait vide, c'est dommage ! 

@@ -8,6 +8,7 @@ function row({
   names = 'Noms',
   ids = '(prefix) github',
   page = 'page',
+  artFolder = 'art',
   criteria = null,
   total = 'total',
 } = {}) {
@@ -25,6 +26,7 @@ function row({
     <div class="names">${names}</div>
     <div class="ids mono">${ids}</div>
     <div class="page">${page}</div>
+    <div class="art-folder">${artFolder}</div>
     ${criteriaStr}
     <div class="total hover-info-link">${total}</div>
   `
@@ -32,6 +34,8 @@ function row({
 }
 
 export function initEvaluationSection() {
+  const { regularCriteria, bonusCriteria } = artefactEvaluation
+
   const sectionEvaluation = document.querySelector('section.evaluation')
 
   const rowHeader = row({
@@ -42,14 +46,40 @@ export function initEvaluationSection() {
   for (const [index, student] of promotion.promotion.entries()) {
     const { names, github, prefix } = student
     const page = `../../art/${github}/artefact/`
-    const criteria = artefactEvaluation.criteria.map(criterion => {
-      return artefactEvaluation.works[github]?.[criterion.id]?.grade ?? ''
-    })
-    const total = artefactEvaluation.works[github]
-      ? artefactEvaluation.criteria.reduce((sum, criterion) => {
-        return sum + (artefactEvaluation.works[github][criterion.id]?.grade ?? 0) * criterion.gradeWeight
-      }, 0) / artefactEvaluation.criteria.reduce((sum, criterion) => criterion.gradeWeight + sum, 0)
-      : '-'
+
+    let criteria = artefactEvaluation.criteria.map(() => '')
+    let total = '-'
+
+    const work = artefactEvaluation.works[github]
+    if (work) {
+
+      const bonus = bonusCriteria.reduce((sum, criterion) =>
+        sum + (work[criterion.id]?.grade ?? 0), 0)
+
+      const isBonus = bonus > 0
+      const bonusStr = bonus !== 0 ? `${isBonus ? '+' : '-'}${bonus}` : ''
+      const bonusClass = isBonus ? 'bonus' : 'penalty'
+
+      criteria = artefactEvaluation.criteria.map(criterion => {
+        const base = work[criterion.id]?.grade ?? ''
+
+        if (criterion.mode === 'bonus/penalty') {
+          return `<div class="bonus-penalty ${bonusClass}">${bonusStr}</div>`
+        }
+
+        const innerHTML = bonusStr
+          ? `${base + bonus} <span class="bonus-penalty small ${bonusClass}">(${bonusStr})</span>`
+          : base
+
+        return `<div>${innerHTML}</div>`
+      })
+
+      total = regularCriteria.reduce((sum, criterion) => {
+        return sum + (work[criterion.id]?.grade ?? 0) * criterion.gradeWeight
+      }, 0) / regularCriteria.reduce((sum, criterion) => criterion.gradeWeight + sum, 0)
+
+      total += bonus
+    }
 
     const div = row({
       dataId: github,
@@ -61,6 +91,7 @@ export function initEvaluationSection() {
         <a href="https://github.com/${github}">${github}</a>
       `,
       page: `<a href="${page}">-> artefact</a>`,
+      artFolder: `<a href="https://github.com/jniac/sdc-gd2-2324/tree/main/art/${github}/artefact">-> art</a>`,
       criteria,
       total,
     })
