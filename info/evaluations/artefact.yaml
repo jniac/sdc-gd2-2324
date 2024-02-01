@@ -362,3 +362,64 @@ works:
       comments:
       - Le paysage est un peu trop simple. Le relief est correct, mais il manque de détails.
       - Pas de foliage, hormis les arbres le sol est tout à fait vide, c'est dommage ! 
+
+  Imasma:
+    images:
+      grade: 14
+      comments:
+      - Les images sont correctement cadrées / composées.
+      - On identifier l'artefact facilement.
+      - Certaines composition restent un peu maladroite (cadrage sur la rune, omniprésence du premier plan, etc.)
+    blueprint:
+      grade: 12
+      comments:
+      - Avec de l'aide Mathis est parvenu à réaliser un blueprint convaincant.
+      - L'intégration de la lumière bleue donne à l'artefact une présence remarquable.
+      - L'effet reste un peu simple, c'est un bon début, on apprécierait un développement de la proposition.
+    materials:
+      grade: 14
+      comments:
+      - Les matériaux sont convaincants sans être exceptionnels.
+      - Les matières sont équilibrés.
+    landscape:
+      grade: 14
+      comments:
+      - Globalement satisfaisant. Le sous-bois est convaincant. Le relief est bien travaillé.
+      - Le sol mériterait une attention particulière. Il est trop simple, il manque de détails et la texture parait "oversized". Un second "landscape layer" serait le bienvenu.
+      - La lumière du soleil sur les troncs est un effet particulièrement réussi.
+      - L'artefact est bien intégré dans le paysage. On a envie d'aller l'explorer.
+    mainComment: >-
+      Mathis entretient une relation compliquée avec la machine en général, et 
+      Unreal, Git & VSCode en particulier. Il a toutefois réussi à produire un travail
+      convaincant. Signe pour lui qu'il peut se faire confiance et qu'il est capable
+      de passer outre les premières difficultés. C'est bien. Et cela pourrait être
+      mieux encore !
+
+  Limnatis:
+    images:
+      grade: 10
+      comments:
+      - Nooon, il y a l'interface de l'éditeur sur les images ! 😱
+      - Impossible d'apprécier la "photographie" dans ces conditions.
+      - Avec le format très horizontal du viewport (interface éditeur) il y a "trop de champ" (focal trop large), donnant à voir trop d'espaces vides (murs, sols).
+    blueprint:
+      grade: 16
+      comments:
+      - L'artefact en soi n'est pas très intéressant, mais Emma a complété son travail avec d'autres blueprints qui présentent au final un cerain intérêt.
+    materials:
+      grade: 12
+      comments:
+      - Le décor est habillé avec des matériaux simples, mais l'ensemble est cohérent.
+      - Il manque un travail sur les matériaux de l'artefact.
+      - L'intégration de matériaux supplémentaires (megascan) était une bonne initiative, mais on ne voit pas à quoi ils ont servi... !
+    landscape:
+      grade: 12
+      comments:
+      - Emma n'a pas répondu au brief, elle n'a pas réalisé de paysage (sauf peut-être un début de désert dans le dernier screenshot, mais on en voit trop peu).
+      - En revanche un travail convaincant de placement de "static meshes" et d'assets (mur, porte interactive) a été réalisé.
+    mainComment: >-
+      Emma a réalisé un travail intéressant, mais elle ne répond que partiellement 
+      à la demande. Il manque un paysage, et l'artefact en lui-même n'est pas très
+      intéressant. On devine pourtant un intérêt pour les possibilités du logiciels,
+      et une certaine inspiration. On reste en attente de réalisations qui en fasse
+      véritablement la démonstration.
