@@ -60,30 +60,54 @@ criteria:
 
 works:
   IAmSoDIM:
-    images:
+    images-old-1:
       grade: 16
       comments:
       - Les images sont de bonne facture (composition).
       - Les teintes chaudes amenées par la lumière du soleil couchant se marient gracieusement avec le bleu du ciel.
       - Les runes se détachent bien du reste de la scène.
-    blueprint:
+    images:
+      grade: 18
+      comments:
+      - Les images sont de très bonne facture (composition / cadrage). C'est suffisamment rare pour être souligné ici.
+      - Les teintes chaudes amenées par la lumière du soleil couchant se marient gracieusement avec le bleu du ciel.
+      - Les runes se détachent bien du reste de la scène.
+      - Il y a une vraie qualité "photographique" dans ces images.
+    blueprint-old-1:
       grade: 12
       comments:
       - Le "pont" de plateformes est une idée originale.
       - La proposition reste un peu simple, il aurait fallut pousser plus loin l'idée.
-    materials:
+    blueprint:
+      grade: 20
+      comments:
+      - Le "pont" de plateformes est une idée originale.
+      - L'animation du pont est "parfaite" (timing, vitesse, courbes d'amortis, etc.)
+      - Le blueprint du pont est complexe (iteration dynamique sur un nb de plateformes variable, etc.)
+    materials-old-1:
       grade: 8
       comments:
       - Aïe, il n'y a rien à voir ici.
       - Les runes n'ont été pas été travaillées au delà du premier jet.
       - Pas de textures, aucun usage des propriétés metallic/roughness, opacity mask, normals etc.
-    landscape:
+    materials:
+      grade: 16
+      comments:
+      - Aïe, il n'y a rien à voir ici.
+      - Les runes n'ont été pas été travaillées au delà du premier jet.
+      - Pas de textures, aucun usage des propriétés metallic/roughness, opacity mask, normals etc.
+    landscape-old-1:
       grade: 8
       comments:
       - Ouille, ici non plus il n'y a pas grand chose à voir.
       - Le relief est pauvre.
       - On voit le "bord" du terrain 😬
       - Quelques arbres, mais pas de foliage en dehors de cela (pas d'herbe, de buisson, de rochers etc.).
+    landscape:
+      grade: 16
+      comments:
+      - Le nouveau paysage est très réussi (un genre de lande monotone dont le modelé apporte des qualité plastiques intéressantes).
+      - L'artefact est bien inséré dans le paysage (ilot rocheux volant, pont y menant).
     participation:
       grade: 2
       comments:
