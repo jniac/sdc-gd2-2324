@@ -236,3 +236,35 @@ works:
       comments:
       - Un début de travail sur le landscape (élévation, relief, etc.), mais cela reste encore trop simple.
       - Pas de foliage (hormis les arbres), c'est dommage ! Avec quelques rochers, des buissons, des fougères ou que sais-je le résultat pourrait être bien plus convaincant.
+
+  Adla6t:
+    images:
+      grade: 12
+      comments:
+      - Les images ne sont pas très bien cadrées / composées. 
+      - Les images du "playground" sont trop vides. L'artefact y est insignifiant.
+      - Les images du "landscape" sont un peu mieux. Mais étant donnée la matière présente dans la scène il y avait certainement moyen de faire mieux.
+    blueprint:
+      grade: 12
+      comments:
+      - C'est un début de travail. Mais la proposition reste trop simple. Le changement de couleur de la statue est une première étape, mais il faut aller plus loin.
+    materials:
+      grade: 12
+      comments:
+      - Excepté le matériau de la statue, il n'y a pas eu de travail sur les matériaux.
+      - Le matériau du sol est trop simple. Il aurait fallut ajouter des "layers" pour faire varier la matière autour de la statue et des rochers.
+    landscape:
+      grade: 14
+      comments:
+      - Le paysage est assez convaicant. Le relief est bien travaillé.
+      - Les éléments foliage sont réparti de manière un peu trop uniforme. Il aurait fallut les répartir de manière plus aléatoire, créer des zones plus denses, d'autres plus clairsemées.
+      - On remarque un usage créatif des assets de la bibliothèque (feu). Il en ressort une ambiance intéressante, très expressionniste (présence de flammes). 
+    mainComment: >-
+      Adiara se fâche parfois avec le logiciel, mais elle paraît aussi prendre du
+      plaisir à créer des environnements où elle procède avec une grande liberté, 
+      suivant une inspiration originale. Il ne faut pas négliger cependant la 
+      réalisation des blueprints et des matériaux.
+    
+    
+      
+
