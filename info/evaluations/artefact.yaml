@@ -533,3 +533,33 @@ works:
       Anthéa travaille en marge du cours ce qui rend le suivi de son travail difficile.
       Elle a toutefois produit un travail convaincant. Ce qui laisse à penser qu'en
       de meilleurs circonstances Anthéa pourrait produire des travaux remarquables.
+
+  Isigma-oss:
+    images:
+      grade: 12
+      comments:
+      - La composition des images est très sages.
+      - Le premier est généralement trop présent (et généralement vide).
+      - La lumière joue bien avec le décor (reflet, modélés, clair obscur, etc.), attention toutefois à ne pas être trop sous-exposé.
+      - Du point de vue des teintes, il se passe des choses intéressantes, les camaïeux violets / roses sont agréables.
+    blueprint:
+      grade: 14
+      comments:
+      - Un artefact original, mais aussi un peu compliqué à apprécier. En rendant le matériau de base transparent l'object devient très complexe à appréhender.
+      - Reste que l'effet d'ouverture / sépération de la pyramide est un effet intéressant.
+    materials:
+      grade: 12
+      comments:
+      - Des matériaux simples, il n'y a pas eu de recherches particulières sur les matières.
+      - Le sol présente 3 "landscape layer" (roche, herbe, pyramide). OK
+    landscape:
+      grade: 14
+      comments:
+      - Le paysage est assez réussi. Le relief est bien travaillé.
+      - Foliage n'a pas été utilisé, il en résulte un sol qui paraît un peu vide.
+      - Le "landscape layer" qui se découvre lorsque la pyramide se retire aide à intégrer l'artefact dans le paysage.
+    mainComment: >-
+      Killian se laisse souvent déborder par la complexité technique du logiciel. 
+      Toutefois, en s'y reprenant à plusieurs fois, il est parvenu à produire un 
+      travail d'une sophistication intéressante. Il reste encore à soigner le 
+      détail et à dégager de intentions artistiques plus évidentes.
