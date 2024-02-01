@@ -165,14 +165,23 @@ works:
       - "Un renu schizophrène : les premières images sont maladroites, bancales, les dernières sont plutôt réussies et donnent envie d'en (sa)voir plus."
       - Les premières images de l'artefact sont difficiles à appréhender. Le personnage paraît flotter dans les airs. On ne comprend pas le sol. Le bloc violet est informe, illisible.
       - Les dernières images en revanche présentant une teinte bleutée originale, attisent la curiosité. Le sous-bois donne envie d'être exploré.
-    blueprint:
+    blueprint-old-1:
       grade: 8
       comments:
       - Un artefact-rune-ascenseur... hm non. L'interactivité ne fait pas "sens". Il faut mettre une intention artisitique derrière la présence de l'artefact.
-    materials:
+    blueprint:
+      grade: 12
+      comments:
+      - Un ascenseur, des portes qui s'ouvrent, c'est un début de travail. Mais cela manque d'une intention artistique, d'un effet esthétique.
+    materials-old-1:
       grade: 8
       comments:
       - Un usage créatif des matériaux est présent. Mais pour autant, excepté le sol du sous-bois, pas de matériaux complexes (hologrammes, animation, etc.)
+    materials:
+      grade: 14
+      comments:
+      - Des matériaux originaux habillent le décor. C'est un bon point de départ.
+      - Il en résulte un effet esthétique intéressant, même si cela reste encore un peu simple / monotone.
     landscape:
       grade: 12
       comments:
@@ -236,3 +245,61 @@ works:
       comments:
       - Un début de travail sur le landscape (élévation, relief, etc.), mais cela reste encore trop simple.
       - Pas de foliage (hormis les arbres), c'est dommage ! Avec quelques rochers, des buissons, des fougères ou que sais-je le résultat pourrait être bien plus convaincant.
+
+  Adla6t:
+    images:
+      grade: 12
+      comments:
+      - Les images ne sont pas très bien cadrées / composées. 
+      - Les images du "playground" sont trop vides. L'artefact y est insignifiant.
+      - Les images du "landscape" sont un peu mieux. Mais étant donnée la matière présente dans la scène il y avait certainement moyen de faire mieux.
+    blueprint:
+      grade: 12
+      comments:
+      - C'est un début de travail. Mais la proposition reste trop simple. Le changement de couleur de la statue est une première étape, mais il faut aller plus loin.
+    materials:
+      grade: 12
+      comments:
+      - Excepté le matériau de la statue, il n'y a pas eu de travail sur les matériaux.
+      - Le matériau du sol est trop simple. Il aurait fallut ajouter des "layers" pour faire varier la matière autour de la statue et des rochers.
+    landscape:
+      grade: 14
+      comments:
+      - Le paysage est assez convaicant. Le relief est bien travaillé.
+      - Les éléments foliage sont réparti de manière un peu trop uniforme. Il aurait fallut les répartir de manière plus aléatoire, créer des zones plus denses, d'autres plus clairsemées.
+      - On remarque un usage créatif des assets de la bibliothèque (feu). Il en ressort une ambiance intéressante, très expressionniste (présence de flammes). 
+    mainComment: >-
+      Adiara se fâche parfois avec le logiciel, mais elle paraît aussi prendre du
+      plaisir à créer des environnements où elle procède avec une grande liberté, 
+      suivant une inspiration originale. Il ne faut pas négliger cependant la 
+      réalisation des blueprints et des matériaux.
+    
+  GDJulie:
+    images:
+      grade: 10
+      comments:
+      - Nooon, il y a l'interface de l'éditeur sur les images ! 😱
+      - Avec des "warnings" en plus ! 😱😱
+      - Impossible d'apprécier la "photographie" dans ces conditions.
+    blueprint:
+      grade: 16
+      comments:
+      - Un bon travail de blueprint. Des animations de rotations complexes, des effets de particules, etc.
+      - Il manque toutefois une intention artistique dans le déploiement, la mise en scène des différents effets ne produit pas l'effet "waouh" escompté.
+    materials:
+      grade: 14
+      comments:
+      - Un détournement intéressant d'un matériau de la bibliothèque pour réaliser un effet "eau" sur l'artefact.
+    landscape:
+      grade: 12
+      comments:
+      - Un paysage un peu trop simple. Le relief n'est pas trop mal, mais la scène est trop vide.
+      - Deux "landscape layers" c'est bien, mais pourquoi ce jaune ? Cela ne fait pas très naturel. Si une intention surréaliste préside ici, la mise en œuvre ne suffit pas à la faire ressortir.
+    mainComment: >-
+      Julie est très compatible avec Unreal Engine. Elle a compris comment réaliser
+      des effets compliqués, comment jouer avec les différents nœuds de la programmation
+      nodale, qu'il s'agit de matériaux ou de blueprints. Le résultat reste toutefois
+      trop brouillon, à l'image de ces captures d'écrans dont elle ne s'est pas
+      donné la peine de masquer l'interface de l'éditeur. La motivation est là,
+      mais il faut à présent se soucier de concrétiser les intentions artistiques.
+      En bref, un excellent potentiel qui demande à être canalisé.
