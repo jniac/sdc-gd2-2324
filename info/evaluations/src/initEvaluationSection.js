@@ -7,8 +7,8 @@ function row({
   index = -1,
   names = 'Noms',
   ids = '(prefix) github',
-  page = 'page',
-  artFolder = 'art',
+  page = '<span class="icon web" style="font-size: 1.2em"></span>',
+  artFolder = '<span class="icon folder" style="font-size: 1.2em"></span>',
   criteria = null,
   total = 'total',
 } = {}) {
@@ -85,8 +85,8 @@ export function initEvaluationSection() {
         <span>(${prefix})</span>
         <a href="https://github.com/${github}">${github}</a>
       `,
-      page: `<a href="${page}">-> artefact</a>`,
-      artFolder: `<a href="https://github.com/jniac/sdc-gd2-2324/tree/main/art/${github}/artefact">-> art</a>`,
+      page: `<a href="${page}"><span class="icon web" style="font-size: 1.2em"></span></a>`,
+      artFolder: `<a href="https://github.com/jniac/sdc-gd2-2324/tree/main/art/${github}/artefact"><span class="icon folder" style="font-size: 1.2em"></span></a>`,
       criteria,
       total,
     })

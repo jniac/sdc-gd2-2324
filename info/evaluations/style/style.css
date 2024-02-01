@@ -18,6 +18,35 @@
   background-color: #ddd;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-color: currentColor;
+  
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  &.web {
+    mask-image: url(../../../common-resources/assets/web.svg);
+    -webkit-mask-image: url(../../../common-resources/assets/web.svg);
+  }
+
+  &.folder {
+    mask-image: url(../../../common-resources/assets/folder.svg);
+    -webkit-mask-image: url(../../../common-resources/assets/folder.svg);
+  }
+}
+
+a .icon:hover {
+  background-color: white;
+  transform: scale(1.2);
+}
+
 .hover-info-link {
   & foo {}
 
@@ -222,12 +251,8 @@ section.evaluation {
       }
     }
 
-    & .page {
-      flex: 0 0 6em;
-    }
-
-    & .art-folder {
-      flex: 0 0 3em;
+    & :is(.page, .art-folder) {
+      flex: 0 0 2em;
     }
   }
 }
