@@ -22,7 +22,7 @@ function row({
   }).join('\n')
 
   div.innerHTML = /* html */ `
-    <div class="index mono">${index === -1 ? 'id' : index + 1}</div>
+    <div class="index mono">${index === -1 ? '' : index + 1}</div>
     <div class="names">${names}</div>
     <div class="ids mono">${ids}</div>
     <div class="page">${page}</div>
