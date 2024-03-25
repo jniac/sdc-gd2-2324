@@ -34,8 +34,6 @@ function row({
 }
 
 export function initEvaluationSection() {
-  const { regularCriteria, bonusCriteria } = artefactEvaluation
-
   const sectionEvaluation = document.querySelector('section.evaluation')
 
   const rowHeader = row({
@@ -46,7 +44,6 @@ export function initEvaluationSection() {
   for (const [index, student] of promotion.promotion.entries()) {
     const { names, github, prefix } = student
     const page = `../../art/${github}/artefact/`
-
 
     let criteria = artefactEvaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : '')
     let total = '0'
