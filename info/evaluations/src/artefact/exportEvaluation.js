@@ -1,4 +1,4 @@
-import { promotion, artefactEvaluation } from './data.js'
+import { promotion, artefactEvaluation } from '../data.js'
 
 document.querySelector('button#csv').onclick = () => {
   const csv = Papa.unparse([

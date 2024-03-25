@@ -1,5 +1,5 @@
-import { capitalize } from './utils.js'
-import { promotion, artefactEvaluation } from './data.js'
+import { capitalize } from '../utils.js'
+import { promotion, artefactEvaluation } from '../data.js'
 
 function row({
   classList = [],

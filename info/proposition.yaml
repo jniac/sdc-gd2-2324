@@ -1,0 +1,36 @@
+description: >-
+  Développement d’un prototype de contenu interactif immersif pour le luxe. 
+
+  L’expérience tourne autour de la découverte interactive d’un objet (sac à main, parfum etc.) à travers une interface 3D immersive. 
+  La proposition est enrichie par des contenus additionnels (vidéo, audio, texte) qui viennent compléter l’expérience utilisateur.
+
+  Deux principales options sont proposées pour la réalisation de ce prototype :
+  - Option A : 3D temps réel (WebGL)
+  - Option B : 3D précalculée (séquence d'images)
+
+  Option A : 3D temps réel (WebGL)
+  - Avantages : 
+    - Interactivité (rotation, zoom)
+    - Possibilité de personnalisation
+    - Possibilité de mise à jour
+  - Inconvénients :
+    - Coût de développement
+    - Moindre contrôle sur la qualité visuelle
+
+  Options B : 3D précalculée (séquence d'images)
+  - Avantages : 
+    - Facilité de mise en œuvre
+    - Plus grand contrôle sur la qualité visuelle (possibilités d'effets spéciaux)
+  - Inconvénients :
+    - Moindre interactivité
+    - Moindre personnalisation
+    - Moindre possibilité de mise à jour
+
+  Un soin particulier est attaché aux détails de l’interface, aussi bien du point de vue graphique qu’ergonomique (composition / proportion, animation / transition, feedback ergonomique).
+
+  La conception graphique & ergonomique cible en premier lieu l’affichage sur écran mobile. La déclinaison pour écran de bureau ou tablette est proposé en option.
+
+  En marge de l’expérience principale, le module pourra intégrer des contenus 
+
+  Technologie : 
+  Web (React / HTML / CSS / WebGL) avec intégration de l'API SCORM pour le suivi de l'expérience utilisateur.

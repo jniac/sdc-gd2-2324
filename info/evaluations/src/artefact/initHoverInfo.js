@@ -1,4 +1,4 @@
-import { artefactEvaluation } from './data.js'
+import { artefactEvaluation } from '../data.js'
 
 const hoverInfoElement = document.querySelector('.hover-info')
 
