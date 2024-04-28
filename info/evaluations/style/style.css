@@ -92,7 +92,7 @@ section {
 }
 
 section.title {
-  padding: 2em 0 0 0;
+  padding: 3em 0;
   text-align: center;
 
   & foo {}
@@ -100,6 +100,7 @@ section.title {
   & h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
+    line-height: 1em;
   }
 
   & *:not(h1) {
@@ -113,7 +114,8 @@ section.title {
 }
 
 section.evaluation {
-  padding: 4em;
+  padding: 0 3em;
+  padding-bottom: 3em;
   font-size: 12px;
 
   & .row {

@@ -3,38 +3,59 @@
 <head>
   <link rel="stylesheet" href="style/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.js"></script>
+  <style>
+    main {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .title-link {
+      cursor: pointer;
+      border: solid 1px #0002;
+      width: 480px;
+      border-radius: 4px;
+      transition: all 0.2s ease-out;
+    }
+
+    .title-link:hover {
+      background-color: var(--main-color);
+      color: var(--alt-accent-color);
+
+      a {
+        color: var(--bonus-color-light);
+      }
+    }
+  </style>
+  <script>
+    function openUrl(href) {
+      Object.assign(document.createElement('a'), {
+        href,
+        target: event.metaKey ? '_blank' : '_self',
+        rel: 'noopener noreferrer',
+      }).click()
+    }
+  </script>
 </head>
 
 <body>
   <main>
-    <section class="title">
+    <section class="title title-link" onclick="openUrl('artefact.html')">
       <h1>Artefact</h1>
       <h6>UE5 — Sup De Création — 2023/2024</h6>
       <p>Blueprint - Materials - Landscape - Foliage</p>
-      <ul>
-        <li>
-          <a href="https://github.com/jniac/SDC_GD2_2324_UE5_V2">SDC_GD2_2324_UE5_V2</a>
-        </li>
-        <li>
-          <a href="https://github.com/jniac/SDC_GD2_2324_UE5_LSP">SDC_GD2_2324_UE5_LSP</a>
-        </li>
-      </ul>
+      <p><a href="artefact.html">artefact</a></p>
     </section>
-
-    <section class="evaluation"></section>
-
-    <section class="actions">
-      <button id="csv" style="font-size: 10px;">
-        Exporter CSV
-      </button>
+    <section class="title title-link" onclick="openUrl('davinci.html')">
+      <h1>Da Vinci</h1>
+      <h6>UE5 — Sup De Création — février/mars 2024</h6>
+      <p>Projet de classe</p>
+      <p><a href="davinci.html">davinci</a></p>
     </section>
   </main>
-
-  <div class="overlay">
-    <div class="hover-info hidden"></div>
-  </div>
-
-  <script type="module" src="src/main.js"></script>
 </body>
 
 </html>
