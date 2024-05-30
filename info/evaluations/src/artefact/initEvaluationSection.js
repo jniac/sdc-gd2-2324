@@ -1,5 +1,6 @@
 import { artefactEvaluation as evaluation, promotion } from '../data.js'
-import { capitalize } from '../utils.js'
+import { computeCriteriaAndTotal } from '../utils/computeCriteriaAndTotal.js'
+import { capitalize } from '../utils/misc.js'
 
 function row({
   classList = [],
@@ -46,33 +47,7 @@ export function initEvaluationSection() {
     const { names, github, prefix } = student
     const page = `../../art/${github}/artefact/`
 
-    let criteria = evaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : '')
-    let total = '0'
-
-    const work = evaluation.works[github]
-    if (work) {
-      const { bonus, totalGrade } = evaluation.computeWorkGrades(work)
-
-      const isBonus = bonus > 0
-      const bonusStr = bonus !== 0 ? `${isBonus ? '+' : '-'}${bonus}` : ''
-      const bonusClass = isBonus ? 'bonus' : 'penalty'
-
-      criteria = evaluation.criteria.map(criterion => {
-        const base = work[criterion.id]?.grade ?? ''
-
-        if (criterion.mode === 'bonus/penalty') {
-          return `<div class="bonus-penalty ${bonusClass}">${bonusStr}</div>`
-        }
-
-        const innerHTML = bonusStr
-          ? `${base + bonus} <span class="bonus-penalty small ${bonusClass}">(${base}${bonusStr})</span>`
-          : base
-
-        return `<div>${innerHTML}</div>`
-      })
-
-      total = totalGrade
-    }
+    const { criteria, total } = computeCriteriaAndTotal(evaluation, github)
 
     const div = row({
       dataId: github,

@@ -1,5 +1,7 @@
 import { davinciEvaluation as evaluation, promotion } from '../data.js'
-import { capitalize, initCopyButtons } from '../utils.js'
+import { computeCriteriaAndTotal } from '../utils/computeCriteriaAndTotal.js'
+import { initHoverInfo } from '../utils/initHoverInfo.js'
+import { capitalize, initCopyButtons } from '../utils/misc.js'
 
 const sectionEvaluation = document.querySelector('section.evaluation')
 
@@ -46,8 +48,7 @@ export function initEvaluationSection() {
     const { names, github, prefix } = student
     const page = `../../art/${github}/contribution-davinci/`
 
-    let criteria = evaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : '')
-    let total = '0'
+    const { criteria, total } = computeCriteriaAndTotal(evaluation, github)
 
     row({
       dataId: github,
@@ -69,3 +70,4 @@ export function initEvaluationSection() {
 
 initEvaluationSection()
 initCopyButtons()
+initHoverInfo(evaluation)
