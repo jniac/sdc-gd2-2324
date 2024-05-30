@@ -1,2 +1,85 @@
 exerciseName: Davinci
 
+mainComment: Commentaire général
+
+criteria:
+- id: contribution
+  name: Contribution
+  mode: regular
+  gradeWeight: 1
+
+- id: participation
+  name: Participation
+  mode: bonus/penalty
+  gradeWeight: 1
+  desc:
+  - Participation en classe
+  details:
+  - Assiduité
+  - Participation aux discussions
+  - Aide aux camarades
+
+works:
+  Qnorguet:
+    contribution:
+      grade: 15
+      comments:
+      - Bon travail, les images sont élégantes, bonne composition.
+      - Le level design est soigné, les proportions sont cohérentes.
+      - La lumière est bien gérée.
+  
+  IAmSoDIM:
+    contribution:
+      grade: 18
+      comments:
+      - Très bon travail aussi bien technique / créatif que pour la gestion du 
+        projet à l'échelle du groupe.
+      - Bonne communication avec les autres membres du groupe.
+      - Bonne compréhension du moteur.
+    participation:
+      grade: 2
+      comments:
+      - Très bonne implication en classe.
+      - Dimitri est un moteur pour le groupe.
+
+  Imasma:
+    contribution:
+      grade: 15
+      comments:
+      - Bonne implication dans le projet.
+      - Excellent travail sur la musique.
+    participation:
+      grade: 1
+      comments:
+      - La musique est un vrai plus pour le projet.
+
+  Ecaritey:
+    contribution:
+      grade: 13
+      comments:
+      - Bonne implication dans le projet.
+    participation:
+      grade: .5
+      comments:
+      - Elodie participe davantage en classe (en aidant notamment ses camarades).
+      - C'est encore un peu timide, mais cela semble s'améliorer.
+
+  Juansupdecreation:
+    contribution:
+      grade: 18
+      comments:
+      - Excellente implication dans le projet.
+      - Très bon travail d'intégration sur l'UI.
+      - Très bonne compréhension du moteur, grande autonomie.
+    participation:
+      grade: 1
+      comments:
+      - Juan est très autonome, capable d'aborder des problèmes complexes.
+      - Attention toutefois à ne pas trop s'isoler.
+
+  Limnatis:
+    contribution:
+      grade: 15
+      comments:
+      - Bonne implication dans le projet.
+      - Bon travail sur les assets.

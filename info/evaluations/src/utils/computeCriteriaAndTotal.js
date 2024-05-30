@@ -8,7 +8,7 @@ export function computeCriteriaAndTotal(evaluation, github) {
   if (!work) {
     return {
       criteria: evaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : ''),
-      total: '0',
+      total: '-',
     }
   }
 
