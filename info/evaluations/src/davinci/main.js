@@ -1,5 +1,5 @@
-import { capitalize } from '../utils.js'
-import { promotion } from '../data.js'
+import { davinciEvaluation as evaluation, promotion } from '../data.js'
+import { capitalize, initCopyButtons } from '../utils.js'
 
 const sectionEvaluation = document.querySelector('section.evaluation')
 
@@ -11,10 +11,16 @@ function row({
   ids = '(prefix) github',
   page = '<span class="icon web" style="font-size: 1.2em"></span>',
   artFolder = '<span class="icon folder" style="font-size: 1.2em"></span>',
+  criteria = evaluation.criteria.map(criterion => criterion.name),
+  total = 'total',
 } = {}) {
   const div = document.createElement('div')
   div.dataset.id = dataId
   div.classList.add('row', ...classList)
+
+  const criteriaHtml = criteria.map((criterion, index) => {
+    return `<div data-criterion-id="${evaluation.criteria[index].id}" class="criterion hover-info-link ${criterion ? '' : 'empty'}">${criterion}</div>`
+  }).join('\n')
 
   div.innerHTML = /* html */ `
     <div class="index mono">${index === -1 ? '' : index + 1}</div>
@@ -22,6 +28,10 @@ function row({
     <div class="ids mono">${ids}</div>
     <div class="page">${page}</div>
     <div class="art-folder">${artFolder}</div>
+    <div class="criteria">
+      ${criteriaHtml}
+      <div class="total hover-info-link">${total}</div>
+    </div>
   `
   sectionEvaluation.append(div)
   return div
@@ -36,6 +46,9 @@ export function initEvaluationSection() {
     const { names, github, prefix } = student
     const page = `../../art/${github}/contribution-davinci/`
 
+    let criteria = evaluation.criteria.map(criterion => criterion.mode === 'regular' ? '0' : '')
+    let total = '0'
+
     row({
       dataId: github,
       classList: ['student'],
@@ -44,11 +57,15 @@ export function initEvaluationSection() {
       ids: `
         <span>(${prefix})</span>
         <a href="https://github.com/${github}">${github}</a>
+        <button class="copy-button" data-clipboard-text="${github}"></button>
       `,
       page: `<a href="${page}"><span class="icon web" style="font-size: 1.2em"></span></a>`,
       artFolder: `<a href="https://github.com/jniac/sdc-gd2-2324/tree/main/art/${github}/artefact"><span class="icon folder" style="font-size: 1.2em"></span></a>`,
+      criteria,
+      total,
     })
   }
 }
 
 initEvaluationSection()
+initCopyButtons()

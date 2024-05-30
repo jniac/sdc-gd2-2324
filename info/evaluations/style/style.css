@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap);
 @import url(../../../common-resources/reset.css);
 @import url(overlay.css);
+@import url(iconify.css);
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -152,7 +153,19 @@ section.evaluation {
       }      
     }
 
-    & > * {
+    & .criteria {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+
+      & > *:first-child {
+        border-radius: 4px 0 0 4px !important;
+        border: var(--border-color) 1px solid !important;
+      }
+    }
+
+    & > *,
+    & .criteria > * {
       overflow: hidden;
       text-overflow: ellipsis;
       display: flex;
@@ -165,7 +178,7 @@ section.evaluation {
       margin-left: 4px;
     }
 
-    & > :is(.criterion, .total) {
+    & :is(.criterion, .total) {
       flex: 1 1 8em;
       text-align: center;
       margin-left: 0px;
@@ -236,7 +249,7 @@ section.evaluation {
     }
     
     & .ids {
-      flex: 0 0 15em;
+      flex: 0 0 16em;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;

@@ -59,26 +59,35 @@ export const promotion = await loadYaml(`../promotion.yaml`)
  * }} Evaluation
  */
 
-/** @type{Evaluation} */
-const artefactEvaluation = await loadYaml(`./artefact.yaml`)
+/**
+ * 
+ * @param {Evaluation} evaluation 
+ */
+function initEvaluation(evaluation) {
+  evaluation.regularCriteria = evaluation.criteria
+    .filter(criterion => criterion.mode === 'regular')
 
-artefactEvaluation.regularCriteria = artefactEvaluation.criteria
-  .filter(criterion => criterion.mode === 'regular')
+  evaluation.bonusCriteria = evaluation.criteria
+    .filter(criterion => criterion.mode === 'bonus/penalty')
 
-artefactEvaluation.bonusCriteria = artefactEvaluation.criteria
-  .filter(criterion => criterion.mode === 'bonus/penalty')
-
-artefactEvaluation.computeWorkGrades = (work) => {
-  const { regularCriteria, bonusCriteria } = artefactEvaluation
-  const bonus = bonusCriteria.reduce((sum, criterion) => {
-    const grade = work?.[criterion.id]?.grade ?? 0
-    return sum + grade
-  }, 0)
-  const grades = regularCriteria.map(criterion => (work?.[criterion.id]?.grade ?? 0) + bonus)
-  const gradesWeights = regularCriteria.map(criterion => criterion.gradeWeight)
-  const totalGradeWeight = gradesWeights.reduce((sum, weight) => sum + weight, 0)
-  const totalGrade = Math.round(grades.reduce((sum, grade, i) => sum + grade * gradesWeights[i], 0) / totalGradeWeight * 10) / 10
-  return { grades, bonus, totalGrade }
+  evaluation.computeWorkGrades = (work) => {
+    const { regularCriteria, bonusCriteria } = evaluation
+    const bonus = bonusCriteria.reduce((sum, criterion) => {
+      const grade = work?.[criterion.id]?.grade ?? 0
+      return sum + grade
+    }, 0)
+    const grades = regularCriteria.map(criterion => (work?.[criterion.id]?.grade ?? 0) + bonus)
+    const gradesWeights = regularCriteria.map(criterion => criterion.gradeWeight)
+    const totalGradeWeight = gradesWeights.reduce((sum, weight) => sum + weight, 0)
+    const totalGrade = Math.round(grades.reduce((sum, grade, i) => sum + grade * gradesWeights[i], 0) / totalGradeWeight * 10) / 10
+    return { grades, bonus, totalGrade }
+  }
 }
 
-export { artefactEvaluation }
+/** @type{Evaluation} */
+export const artefactEvaluation = await loadYaml(`./artefact.yaml`)
+initEvaluation(artefactEvaluation)
+
+/** @type{Evaluation} */
+export const davinciEvaluation = await loadYaml(`./davinci.yaml`)
+initEvaluation(davinciEvaluation)
