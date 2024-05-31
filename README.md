@@ -10,4 +10,4 @@ Les projets Unreal sont ici :
 
 [Evaluations](https://jniac.github.io/sdc-gd2-2324/info/evaluations):
 - [Artefact](https://jniac.github.io/sdc-gd2-2324/info/evaluations/artefact)
-- - [Da Vinci](https://jniac.github.io/sdc-gd2-2324/info/evaluations/davinci)
+- [Da Vinci](https://jniac.github.io/sdc-gd2-2324/info/evaluations/davinci)
