@@ -13,9 +13,9 @@ criteria:
   mode: bonus/penalty
   gradeWeight: 1
   desc:
-  - Participation en classe
+  - Participation & implication en classe
   details:
-  - Assiduité
+  - Assiduité, implication
   - Participation aux discussions
   - Aide aux camarades
 
