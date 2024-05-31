@@ -27,7 +27,7 @@ export function initHoverInfo(evaluation) {
       ${criterion.desc.join('<br>')}
     </div>
     <ul>
-      ${criterion.details.map(str => `<li>${str}</li>`).join('\n')}
+      ${(criterion.details ?? []).map(str => `<li>${str}</li>`).join('\n')}
     </ul>
   `
   }
@@ -36,7 +36,7 @@ export function initHoverInfo(evaluation) {
     return `
       <h3>${criterion.name}</h3>
       <ul>
-        ${work[criterion.id]?.comments.map(str => `<li>${str}</li>`).join('\n')}
+        ${(work[criterion.id]?.comments ?? []).map(str => `<li>${str}</li>`).join('\n')}
       </ul>
     `
   }

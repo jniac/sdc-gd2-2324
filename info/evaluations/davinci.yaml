@@ -4,15 +4,25 @@ mainComment: Commentaire général
 
 criteria:
 - id: contribution
-  name: Contribution
+  name: Contribution Projet (x2)
+  mode: regular
+  gradeWeight: 2
+  desc:
+  - (Coefficient x2)
+  - ''
+  - Qualité du travail rendu
+  details:
+  - Qualité artistique
+  - Qualité technique
+  - Gestion du projet
+
+- id: implication
+  name: Participation / Implication (x1)
   mode: regular
   gradeWeight: 1
-
-- id: participation
-  name: Participation
-  mode: bonus/penalty
-  gradeWeight: 1
   desc:
+  - (Coefficient x1)
+  - ''
   - Participation & implication en classe
   details:
   - Assiduité, implication
@@ -27,6 +37,10 @@ works:
       - Bon travail, les images sont élégantes, bonne composition.
       - Le level design est soigné, les proportions sont cohérentes.
       - La lumière est bien gérée.
+    implication:
+      grade: 14
+      comments:
+      - Quentin est un élément fiable du groupe. Son travail est rendu à temps. 
   
   IAmSoDIM:
     contribution:
@@ -36,8 +50,8 @@ works:
         projet à l'échelle du groupe.
       - Bonne communication avec les autres membres du groupe.
       - Bonne compréhension du moteur.
-    participation:
-      grade: 2
+    implication:
+      grade: 16
       comments:
       - Très bonne implication en classe.
       - Dimitri est un moteur pour le groupe.
@@ -48,8 +62,8 @@ works:
       comments:
       - Bonne implication dans le projet.
       - Excellent travail sur la musique.
-    participation:
-      grade: 1
+    implication:
+      grade: 16
       comments:
       - La musique est un vrai plus pour le projet.
 
@@ -58,8 +72,8 @@ works:
       grade: 13
       comments:
       - Bonne implication dans le projet.
-    participation:
-      grade: .5
+    implication:
+      grade: 14
       comments:
       - Elodie participe davantage en classe (en aidant notamment ses camarades).
       - C'est encore un peu timide, mais cela semble s'améliorer.
@@ -71,11 +85,13 @@ works:
       - Excellente implication dans le projet.
       - Très bon travail d'intégration sur l'UI.
       - Très bonne compréhension du moteur, grande autonomie.
-    participation:
-      grade: 1
+    implication:
+      grade: 16
       comments:
       - Juan est très autonome, capable d'aborder des problèmes complexes.
-      - Attention toutefois à ne pas trop s'isoler.
+      - Présent lors des discussions.
+      - Attention toutefois à ne pas trop s'isoler une fois pris le 
+        lead sur un sujet.
 
   Limnatis:
     contribution:
@@ -83,3 +99,77 @@ works:
       comments:
       - Bonne implication dans le projet.
       - Bon travail sur les assets.
+    implication:
+      grade: 14
+
+  Adla6t:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  Millunn-G:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  GDJulie:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  Isigma-oss:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  LaurynCarriere:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  Nxsama:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  scrapsofseaweed:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  Racodylanou:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
+
+  y3ll0wNaNa:
+    contribution:
+      grade: 0
+      comments:
+      - Pas de travail rendu.
+    implication:
+      grade: 12
